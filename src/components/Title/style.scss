@@ -1,0 +1,42 @@
+.title {
+	font-family: 'Aqua';
+	font-size: 22px;
+	position: relative;
+	width: auto;
+
+	@media screen and (min-width: 1024px) {
+		// padding-top: 20px;
+		padding: 20px 0;
+		font-size: 27px;
+	}
+
+	&__text {
+		position: relative;
+		padding: 0 20px;
+		min-height: 50px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@media screen and (min-width: 1024px) {
+			justify-content: center;
+			max-width: 30%;
+			min-height: 0px;
+			padding: 5px;
+			margin: 0 auto;
+			padding-right: 20px;
+			padding-top: 20px;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+			left: 0;
+			height: 3px;
+			background: $codex-blue-light;
+		}
+	}
+}
