@@ -1,0 +1,26 @@
+.head-container {
+    .logo-content {
+        margin-left: 60px;
+        height: 30px;
+        width: 145.31px;
+        flex: 1;
+    }
+
+    .legal-info-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 16px;
+    }
+
+    .user-info-container {
+        display: flex;
+        padding-right: 33px;
+        align-items: center;
+    }
+
+    img {
+        height: 30px;
+        padding: 5px;
+    }
+}

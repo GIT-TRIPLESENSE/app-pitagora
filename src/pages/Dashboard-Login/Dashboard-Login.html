@@ -1,0 +1,139 @@
+<!--  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>DashBoard-Login</title>
+</head>
+
+<body>
+	<!-- PER PASSARE A MOBILE AGGIUNGERE A page-container LA CLASS: is-mobile -->
+	<div class="page-container flex-column">
+		<div class="head-container">
+			<div class="logo-content desktop-only">
+				<img src="../../static/assets/logo.png">
+			</div>
+			<div class="legal-info-content mobile-only">
+				<!-- da definire dimensione testo e icona-->
+				<p>Note Legali</p>
+				<img src="../../static/assets/note-icon.png">
+			</div>
+		</div>
+
+		<div class="main-container">
+			<!-- slider component-->
+			<div class="slider mobile-only">
+				<div class="slider-body">
+					<!-- aggiungere la classe slide-active per mostrare la slide corretta -->
+					<div class="slide flex-column" id="slide-1">
+						<div class="img-container">
+							<img src="../../static/assets/img1.png" />
+						</div>
+						<div class="txt-info-container flex-column">
+							<h3>Vantaggio uno lorem</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+						</div>
+					</div>
+					<div class="slide flex-column slide-active" id="slide-2">
+						<div class="img-container">
+							<img src="../../static/assets/slider-mobile.png" />
+						</div>
+						<div class="txt-info-container flex-column">
+							<h3>Prodotti</h3>
+							<p>Scopri i prodotti Pitagora!</p>
+						</div>
+						<div class="request-container">
+							<button id="products-btn" class="button-request">
+								<!-- p 16px -->
+								<p>SCOPRI I PRODOTTI</p>
+							</button>
+						</div>
+					</div>
+					<div class="slide flex-column" id="slide-3"></div>
+				</div>
+			</div>
+			<!-- slider buttons-- aggiungere la classe -active- per il bottone corrente -->
+			<div class="buttons-container">
+				<div id="btn-1" class="btn-slider active"></div>
+				<div id="btn-2" class="btn-slider"></div>
+				<div id="btn-3" class="btn-slider"></div>
+			</div>
+
+			<div class="side-element-container desktop-only">
+				<div class="side-element-content">
+					<img src="../../static/assets/img1.png" />
+					<h3>Vantaggio uno lorem</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+				</div>
+			</div>
+
+			<!--login mobile -->
+			<div class="login-container mobile-only">
+				<div class="digit-container flex-column">
+					<img src="../../static/assets/fingerprint.png" />
+					<p>Login con <strong>Touch ID</strong></p>
+					<p id="access">ACCESSO CLASSICO</p>
+				</div>
+				<div class="registration-container">
+					<p>
+						Non hai l'account?
+						<a id="registration-link" class="link" href="something">Registrati</a>
+					</p>
+				</div>
+			</div>
+
+			<!--login desktop -->
+			<div class="login-form-container desktop-only">
+				<div class="login-form-content">
+					<div class="login-form-content-wrapper">
+						<div class="login-header">
+							<!-- fontsize da stabilire -->
+							<p>Login</p>
+							<h3>Effettua l'accesso all'area personale</h3>
+						</div>
+						<div class="form-container">
+							<form>
+								<div class="input-container">
+									<input type="text" id="username" name="username" placeholder="Username" />
+									<!-- verificare icona input psw-->
+									<input type="text" id="password" name="password" placeholder="Password" />
+								</div>
+								<div class="utilities-login">
+									<!-- trovare nome id più furbo -->
+									<div class="remember-login-wrapper">
+										<input id="remember-login" type="checkbox" />
+										<label for="remember-login">Resta collegato</label>
+									</div>
+									<a id="access-problem" class="link" href="something">Problemi d'accesso?</a>
+								</div>
+								<div class="request-container">
+									<button type="submit" id="sendRequest" class="button-request">
+										<!-- p 16px -->
+										<p>ACCEDI ALL'AREA PERSONALE</p>
+									</button>
+								</div>
+							</form>
+							<div class="registration-container">
+								<p>
+									Non hai l'account?
+									<a id="registration-link" class="link" href="something">Registrati</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

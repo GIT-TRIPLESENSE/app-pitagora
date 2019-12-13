@@ -1,0 +1,102 @@
+.side-menu {
+    flex: 1;
+    align-items: flex-start;
+    padding: 10px;
+
+    .top-menu {
+        flex: 4;
+        width: 100%;
+        align-items: flex-start;
+
+        .menu-element {
+            display: flex;
+            align-items: center;
+            padding: 5px;
+
+            .dotted-cube {
+                height: 25px;
+                width: 25px;
+                border: 2px dotted #2D85EB;
+                margin-right: 5px;
+            }
+
+            p {}
+
+            &.active::before {
+                content: "";
+                height: 56px;
+                width: 4px;
+                background-color: #007DC5;
+                left: 0;
+                position: absolute;
+            }
+        }
+    }
+
+    .bottom-menu {
+        width: 100%;
+        flex: 1;
+        align-items: flex-start;
+
+        .wrapper {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 10px;
+            flex: 1;
+
+            .button {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-color: black;
+                    height: 2px;
+                    width: 10px;
+                    right: 0;
+                    top: 5px;
+                    transform: rotate(45deg);
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background-color: black;
+                    height: 2px;
+                    right: 0;
+                    bottom: 5px;
+                    width: 10px;
+                    transform: rotate(135deg);
+                }
+            }
+        }
+
+        .cta-container {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            flex: 2;
+            justify-content: space-evenly;
+
+            #contact-btn {
+                font-size: 14px;
+                padding: 5px;
+            }
+
+            img {
+                flex: 1;
+            }
+
+            p {
+                margin: 5px 3px;
+                flex: 3;
+            }
+
+            div {
+                width: 100%;
+
+            }
+        }
+
+    }
+}
