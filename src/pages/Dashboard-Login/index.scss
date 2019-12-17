@@ -1,81 +1,85 @@
-.page-container {
-	height: 100%;
+	.page-container {
 
-	.head-container {
-		display: flex;
-		height: 60px;
-		width: 100%;
-		justify-items: start;
-		align-items: center;
-		
-	}
+		&.dashboard-login {
 
-	.main-container {
-		display: flex;
-		justify-content: space-between;
-		width: 80%;
-		height: 100%;
-	}
+			height: 100%;
 
-	.mobile-only {
-		display: none !important;
-	}
-
-	.desktop-only {
-		display: flex;
-	}
-
-	&.is-mobile {
-		.mobile-only {
-			display: flex !important;
-		}
-
-		.desktop-only {
-			display: none !important;
-		}
-
-		.head-container {
-			display: flex;
-			justify-content: flex-end;
-			width: 100%;
-			flex: 1;
-		}
-
-		.main-container {
-			flex-direction: column;
-			align-items: center;
-			justify-content: space-evenly;
-			flex: 10;
-
-			.buttons-container {
-				padding: 15px;
-				-webkit-box-flex: 1;
-				flex: 1;
+			.head-container {
 				display: flex;
+				flex: 1;
+				width: 100%;
+				justify-items: start;
+				align-items: center;
+			}
 
-				.btn-slider {
-					// PLACEHOLDER PER IMMAGINE
-					height: 8px;
-					background-color: #072952;
-					border-radius: 100%;
-					width: 8px;
-					margin: 0 4px;
-					opacity: 0.15;
+			.main-container {
+				display: flex;
+				justify-content: space-between;
+				width: 80%;
+				flex: 11;
+			}
 
-					&.active {
-						opacity: 1;
+			.mobile-only {
+				display: none !important;
+			}
+
+			.desktop-only {
+				display: flex;
+			}
+
+			&.is-mobile {
+				.mobile-only {
+					display: flex !important;
+				}
+
+				.desktop-only {
+					display: none !important;
+				}
+
+				.head-container {
+					display: flex;
+					justify-content: flex-end;
+					width: 100%;
+					flex: 1;
+				}
+
+				.main-container {
+					flex-direction: column;
+					align-items: center;
+					justify-content: space-evenly;
+					flex: 10;
+
+					.buttons-container {
+						padding: 15px;
+						-webkit-box-flex: 1;
+						flex: 1;
+						display: flex;
+
+						.btn-slider {
+							// PLACEHOLDER PER IMMAGINE
+							height: 8px;
+							background-color: #072952;
+							border-radius: 100%;
+							width: 8px;
+							margin: 0 4px;
+							opacity: 0.15;
+
+							&.active {
+								opacity: 1;
+							}
+						}
 					}
 				}
-			}
-		}
 
+			}
+
+
+		}
 	}
 
 
-}
-
-@import 'components/Head/head.scss';
-@import 'components/Left-Element/side-element.scss';
-@import 'components/Login-Form/login-form.scss';
-@import 'components/Slider/slider.scss';
-@import 'components/Login-Mobile/login-mobile.scss';
+	@import 'components/Head/head.scss';
+	@import 'components/Left-Element/side-element.scss';
+	@import 'components/Login-Form/login-form.scss';
+	@import 'components/Slider/slider.scss';
+	@import 'components/Login-Mobile/login-mobile.scss';

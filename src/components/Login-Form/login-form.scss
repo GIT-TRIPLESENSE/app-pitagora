@@ -6,14 +6,14 @@
     justify-content: center;
 
     .login-form-content {
-        height: 497px;
-        width: 383px;
+        height: 60vh;
+        min-height: 500px;
+        width: 20vw;
+        min-width: 400px;
         border-radius: 8px;
-        background-color: #FFFFFF;
-        box-shadow: 0 4px 12px 6px rgba(0, 0, 0, 0.06);
-        display: flex;
+        background-color: #fff;
+        box-shadow: 0 4px 12px 6px rgba(0, 0, 0, .06);
         flex-direction: column;
-        align-items: center;
 
         .login-form-content-wrapper {
             height: 100%;
@@ -34,74 +34,151 @@
                     width: 50%;
                 }
             }
+        }
+    }
+}
 
-            .form-container {
-                flex: 4;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                height: 80%;
 
-                form {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    width: 100%;
-                    height: 100%;
+.form-container {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
 
-                    .input-container {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        width: 100%;
-                        flex: 1;
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
 
-                        input[type=text] {
-                            height: 3.5em;
-                            border: 1.5px solid #0063CC;
-                            border-radius: 5px;
-                            background-color: #FFFFFF;
-                            margin-bottom: 15px;
-                            padding: 0 10px;
+        .password-eye {
+            position: absolute;
+            right: 5px;
+            top: 66px;
 
-                            &#password {
-                                //background-image: url('eye');
-                                background-position: 0 5px;
-                                background-repeat: no-repeat;
-                            }
-                        }
-                    }
+            img {
+                width: 30px;
+                height: auto;
+                opacity: 0.6;
+            }
 
-                    .utilities-login {
-                        display: flex;
-                        justify-content: space-between;
-                        width: 100%;
-                        flex: 1;
-
-                        input[type=checkbox] {
-                            // da guardare per modificare lo style!!  
-                            border: 2px solid #0063CC;
-                            border-radius: 2px;
-                        }
-
-                        a {
-                            color: #002855;
-                            ;
-                        }
-                    }
-
-                    .request-container {
-                        width: 80%;
-                        flex: 1;
-                        // button[type=submit] {
-                        //   width: 100%;
-                        //   color: #F1F2F8;
-                        //   border-radius: 24px;
-                        //   background: linear-gradient(270deg, #0063CE 0%, #002855 100%);
-                        // }
-                    }
-                }
+            &.active {
+                opacity: 1;
             }
         }
+
+        .request-container {
+            width: 80%;
+            flex: 1;
+        }
+    }
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+    position: relative;
+
+    input[type=text] {
+        height: 3.5em;
+        border: 1.5px solid #0063CC;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        margin-bottom: 15px;
+        padding: 0 10px;
+
+        &#password {
+            //background-image: url('eye');
+            background-position: 0 5px;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+    }
+
+    .error-msg-container {
+        display: none;
+    }
+
+    &.error {
+        #password {
+            border: 2px solid red;
+        }
+
+        .error-msg-container {
+            display: flex;
+            padding-bottom: 10px;
+
+            img {
+                width: 32px;
+                height: auto;
+                padding: 2px;
+            }
+
+            p {
+                font-size: 12px;
+                line-height: 20px;
+                margin: 0;
+                color: red;
+            }
+        }
+    }
+}
+
+.utilities-login {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex: 1;
+
+    input[type=checkbox] {
+        // da guardare per modificare lo style!!  
+        position: absolute;
+        opacity: 0;
+
+        &+label {
+            position: relative;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        &+label::before {
+            content: '';
+            margin-right: 10px;
+            display: inline-block;
+            vertical-align: text-top;
+            background-color: #FFFFFF;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #0063CC;
+            border-radius: 2px;
+
+        }
+
+        // Box focus
+        &:focus+label:before {
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+        }
+
+        // Checkmark
+        &:checked+label:after {
+            content: "";
+            position: absolute;
+            left: 7px;
+            top: 1px;
+            width: 9px;
+            height: 15px;
+            border-right: 2px solid #0063cc;
+            border-bottom: 2px solid #0063cc;
+            transform: rotate(45deg);
+        }
+    }
+
+    a {
+        color: #002855;
+        padding: 3px;
     }
 }

@@ -1,9 +1,23 @@
 .head-container {
+    position: relative;
     .logo-content {
         margin-left: 60px;
         height: 30px;
         width: 145.31px;
         flex: 1;
+    }
+
+    .head-title{
+        flex: 4;
+        display: flex;
+        justify-content: center;
+    }
+
+    .icons-container {
+        @media only screen and (max-width: 600px) {
+            position: absolute;
+            right: 5px;
+        }
     }
 
     .legal-info-content {

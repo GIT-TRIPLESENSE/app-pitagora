@@ -6,10 +6,16 @@
     padding-bottom: 15px;
 
     .digit-container {
-        img {
+
+        #touchId {
+            background: url(../../static/assets/fingerprint.png);
             height: 40px;
             width: 36px;
         }
+        // img {
+        //     height: 40px;
+        //     width: 36px;
+        // }
 
         p {
             opacity: 0.9;

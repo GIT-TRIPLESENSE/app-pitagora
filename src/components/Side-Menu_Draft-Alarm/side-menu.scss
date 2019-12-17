@@ -20,8 +20,6 @@
                 margin-right: 5px;
             }
 
-            p {}
-
             &.active::before {
                 content: "";
                 height: 56px;
@@ -33,70 +31,59 @@
         }
     }
 
-    .bottom-menu {
+}
+
+.bottom-menu {
+    width: 100%;
+    flex: 1;
+    align-items: flex-start;
+
+    .wrapper {
         width: 100%;
+        box-sizing: border-box;
+        padding: 0 10px;
         flex: 1;
-        align-items: flex-start;
+    }
 
-        .wrapper {
-            width: 100%;
-            box-sizing: border-box;
-            padding: 0 10px;
+    .cta-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        flex: 2;
+        justify-content: space-evenly;
+
+        #contact-btn {
+            font-size: 14px;
+            padding: 5px;
+        }
+
+        img {
             flex: 1;
-
-            .button {
-                position: relative;
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    background-color: black;
-                    height: 2px;
-                    width: 10px;
-                    right: 0;
-                    top: 5px;
-                    transform: rotate(45deg);
-                }
-
-                &::after {
-                    content: '';
-                    position: absolute;
-                    background-color: black;
-                    height: 2px;
-                    right: 0;
-                    bottom: 5px;
-                    width: 10px;
-                    transform: rotate(135deg);
-                }
-            }
         }
 
-        .cta-container {
+        p {
+            margin: 5px 3px;
+            flex: 3;
+        }
+
+        div {
             width: 100%;
-            box-sizing: border-box;
-            padding: 10px;
-            flex: 2;
-            justify-content: space-evenly;
-
-            #contact-btn {
-                font-size: 14px;
-                padding: 5px;
-            }
-
-            img {
-                flex: 1;
-            }
-
-            p {
-                margin: 5px 3px;
-                flex: 3;
-            }
-
-            div {
-                width: 100%;
-
-            }
         }
+    }
+}
 
+.button {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    .arrow {
+        height: 10px;
+        width: 10px;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        transform: rotate(-45deg);
     }
 }
