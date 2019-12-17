@@ -74,7 +74,7 @@
 			<!--login mobile -->
 			<div class="login-container mobile-only">
 				<div class="digit-container flex-column">
-					<button id="touchId"></button>					
+					<button id="touchId"></button>
 					<!-- <img src="../../static/assets/fingerprint.png" /> -->
 					<p>Login con <strong>Touch ID</strong></p>
 					<button id="access" class="button">ACCESSO CLASSICO</button>
@@ -98,14 +98,18 @@
 							<form>
 								<!-- per errore password aggiungere classe --error-- -->
 								<div class="input-container">
-									<input type="text" id="username" name="username" placeholder="Username" />
-									<input type="text" id="password" class="error" name="password"
-										placeholder="Password" />
-										<!-- aggiungere la classe --active-- se bottone premuto -->
-										<div class="password-eye button active">
-											<!-- cambiare l'asset con quello più scuro, ho applicato l'opacity se non selezionato -->
-											<img src="../../static/assets/password-eye-icon.png">
+									<div class="input-fields flex-column">
+										<input type="text" id="username" name="username" placeholder="Username" />
+										<div class="password-container row">
+											<input type="text" id="password" class="error" name="password"
+												placeholder="Password" />
+											<div class="password-eye button active">
+												<!-- cambiare l'asset con quello più scuro, ho applicato l'opacity se non selezionato -->
+												<img src="../../static/assets/password-eye-icon.png">
+											</div>
 										</div>
+										<!-- aggiungere la classe --active-- se bottone premuto -->
+									</div>
 									<div class="error-msg-container row">
 										<img src="../../static/assets/error-icon.png">
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
