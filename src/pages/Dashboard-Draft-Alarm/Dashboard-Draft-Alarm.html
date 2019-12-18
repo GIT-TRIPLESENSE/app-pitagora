@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
@@ -10,18 +10,23 @@
 </head>
 
 <body>
-    <div class="page-container dashboard-alarm flex-column is-mobile">
+    <!-- aggiungere classe -- is-mobile -- per versione mobile -->
+    <div class="page-container dashboard-alarm flex-column">
         <div class="head-container">
             <div class="logo-content desktop-only">
-                <img src="../../static/assets/logo.png">
+                <img src="../../static/assets/pitagora-spa-finanziamenti-cessione-quinto-dello-stipendio@2x.png">
             </div>
             <div class="head-title mobile-only">
                 <p>La mia situazione</p>
             </div>
             <div class="icons-container row">
                 <!-- da definire dimensione testo e icona-->
-                <img src="../../static/assets/bell-icon.png">
-                <img src="../../static/assets/user-icon.png">
+                <div>
+                    <img class="icon" src="../../static/assets/bell-notifications-on-ico.svg">
+                </div>
+                <div >
+                    <img class="icon" id="user" src="../../static/assets/Profile.svg">
+                </div>
             </div>
             <div class="user-info-container desktop-only">
                 <p><strong>Benvenuto,</strong><br> Mario Rossi</p>
@@ -32,15 +37,18 @@
                 <div class="top-menu flex-column">
                     <!-- aggiungere la classe --active-- per l'elemento selezionato -->
                     <div class="menu-element active">
-                        <div class="dotted-cube"></div>
+	
+                        <img class="icon" src="../../static/assets/Situation.svg">
                         <p>La mia situazione</p>
                     </div>
                     <div class="menu-element">
-                        <div class="dotted-cube"></div>
+	
+                            <img class="icon" src="../../static/assets/Request.svg">
                         <p>Le mie richieste</p>
                     </div>
                     <div class="menu-element">
-                        <div class="dotted-cube"></div>
+	
+                            <img class="icon" src="../../static/assets/Archive.svg">
                         <p>Archivio</p>
                     </div>
                 </div>
@@ -92,7 +100,7 @@
                                 <h3>Info pratica</h3>
                             </div>
                             <div class="pratica-body-container ">
-                                <div class="row">
+                                <div class="row-start">
                                     <div class="data-container">
                                         <p class="title"><strong>Prodotto:</strong></p>
                                         <p>CQS</p>
@@ -106,7 +114,7 @@
                                         <p>1234567</p>
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="row-start">
                                     <div class="data-container">
                                         <p class="title"><strong>Stato:</strong></p>
                                         <p>In essere</p>
@@ -136,6 +144,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- card summary desktop -->
                         <div class="card-summary flex-column desktop-only">
                             <div class="summary row">
                                 <div class="flex-column">
@@ -177,16 +186,19 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="row slider mobile-only">
+                        <!-- card summary mobile -->
+                        <div class="slider row mobile-only">
                             <div class="card-summary flex-column mobile-only">
-                                <div class="summary row">
-                                    <div class="flex-column">
+                                <div class="row-start">
+                                    <p class="card-title">N° 228002</p>
+                                </div>
+                                <div class="summary flex-column">
+                                    <div class="row-start">
                                         <p><strong>25.000,00 €</strong></p>
-                                        <p class="description">Prestito netto banca</p>
-                                    </div>
-                                    <div class="flex-column">
                                         <p><strong>20.000,00 €</strong></p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="description">Prestito netto banca</p>
                                         <p class="description">Importo pagato</p>
                                     </div>
                                 </div>
@@ -221,7 +233,78 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="details-container flex-column mobile-only">
+                        <div class="tab-menu row card">
+                            <!-- inserire classe --active-- per il tasto attivo -->
+                            <div class="data-btn active">PRATICA</div>
+                            <div class="data-btn">ANTICIPI</div>
+                            <div class="data-btn">RIMBORSI</div>
+                        </div>
 
+                        <!-- inserire classe --alert-- per alert attivo -->
+                        <div class="alert-box card">
+                            <div class="row-start flex-1">
+                                <div>
+                                    <img src="../../static/assets/alert-icon.png">
+                                </div>
+                                <p class="title">Attenzione!</p>
+                            </div>
+                            <div class="row-start flex-1">
+                                <p>La pratica risulta in gestione al recupero crediti.</p>
+                            </div>
+                            <div class="row flex-1">
+                                <a href="somewhere">Maggiori info</a>
+                            </div>
+                        </div>
+                        <div class="pratica-container flex-column">
+                            <div class="title-container row">
+                                <div class="title-info title">
+                                    <h3>Info pratica</h3>
+                                </div>
+                            </div>
+                            <div class="pratica-body-container flex-column">
+                                <div class="row-start">
+                                    <div class="data-container flex-column">
+                                        <p class="title"><strong>Prodotto:</strong></p>
+                                        <p>CQS</p>
+                                    </div>
+                                    <div class="data-container flex-column">
+                                        <p class="title"><strong>Decorrenza:</strong></p>
+                                        <p>08/2010</p>
+                                    </div>
+                                </div>
+                                <div class="row-start">
+                                    <div class="data-container flex-column">
+                                        <p class="title"><strong>NDG:</strong></p>
+                                        <p>1234567</p>
+                                    </div>
+                                    <div class="data-container flex-column">
+                                        <p class="title"><strong>Stato:</strong></p>
+                                        <p>In essere</p>
+                                    </div>
+                                </div>
+                                <div class="row-start">
+                                    <div class="data-container flex-column">
+                                        <p class="title"><strong>Filiale di
+                                                competenza:</strong></p>
+                                        <p>Verona</p>
+                                    </div>
+                                    <div class="data-container flex-column">
+                                        <p class="title"><strong>Data ultimo incasso:</strong>
+                                        </p>
+                                        <p>31/8/2019</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-pratica row-start">
+                                <div class="update-container row">
+                                    <img id="img-update" src="../../static/assets/info-icon.png">
+                                    <p id="update-date">Dati aggiornati al
+                                        27/06/2019</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- info-card component -->
@@ -324,11 +407,30 @@
                                         <a href="showmore">Mostra di più</a>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <!-- componente footer menu -->
+        <div class="footer-menu-container row mobile-only">
+            <!-- inserire classe --active-- per button attivo -->
+            <div id="situation" class="button flex-column active">
+                <img class="menu-icon" src="../../static/assets/user-icon.png">
+                <p>La mia situazione</p>
+            </div>
+            <div id="requests" class="button flex-column">
+                <img class="menu-icon" src="../../static/assets/richieste-icon.png">
+                <p>Richieste</p>
+            </div>
+            <div id="archive" class="button flex-column">
+                <img class="menu-icon" src="../../static/assets/archivio-icon.png">
+                <p>Archivio</p>
+            </div>
+            <div id="contactUs" class="button flex-column">
+                <img class="menu-icon" src="../../static/assets/contact_us-icon.png">
+                <p>Parla con noi</p>
             </div>
         </div>
     </div>

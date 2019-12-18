@@ -2,8 +2,6 @@
     position: relative;
     .logo-content {
         margin-left: 60px;
-        height: 30px;
-        width: 145.31px;
         flex: 1;
     }
 
@@ -14,10 +12,16 @@
     }
 
     .icons-container {
+        display: flex;
+        justify-content: flex-start;
         @media only screen and (max-width: 600px) {
             position: absolute;
             right: 5px;
         }
+            img#user{
+                height: auto;
+                width: 44px;
+            }            
     }
 
     .legal-info-content {

@@ -6,9 +6,7 @@
     justify-content: center;
 
     .login-form-content {
-        height: 60vh;
         min-height: 500px;
-        width: 20vw;
         min-width: 400px;
         border-radius: 8px;
         background-color: #fff;
@@ -85,7 +83,7 @@
     flex-direction: column;
     width: 100%;
     -webkit-box-flex: 1;
-    flex: 3;
+    flex: 2;
     position: relative;
     .input-fields{
         width: 100%;
@@ -122,6 +120,7 @@
 }
 
 .input-container.error {
+    flex: 3;
     #password {
         border: 2px solid red;
     }
