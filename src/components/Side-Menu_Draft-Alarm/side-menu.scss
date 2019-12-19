@@ -4,9 +4,9 @@
     padding: 10px;
 
     .top-menu {
-        flex: 4;
         width: 100%;
         align-items: flex-start;
+
 
         .menu-element {
             display: flex;
@@ -35,30 +35,48 @@
 
 .bottom-menu {
     width: 100%;
-    flex: 1;
+    height: 100%;
     align-items: flex-start;
+    justify-content: flex-end;
 
     .wrapper {
         width: 100%;
         box-sizing: border-box;
         padding: 0 10px;
         flex: 1;
+        justify-content: flex-end;
+        align-items: flex-start;
+
     }
 
     .cta-container {
         width: 100%;
         box-sizing: border-box;
         padding: 10px;
-        flex: 2;
         justify-content: space-evenly;
 
         #contact-btn {
             font-size: 14px;
             padding: 5px;
+            border: 2px solid #0C64C3;
+            border-radius: 18px;
+            width: 100%;
+            font-weight: bold;
+            background-color: #FFFFFF;
+        }
+
+        #contact-btn:hover {
+            width: 100%;
+            color: #F1F2F8;
+            border-radius: 24px;
+            background: linear-gradient(270deg, #0063CE 0%, #002855 100%);
+            cursor: pointer;
         }
 
         img {
             flex: 1;
+            height: 30px;
+            width: 30px;
         }
 
         p {
@@ -68,6 +86,8 @@
 
         div {
             width: 100%;
+            padding: 5px 0;
+            box-sizing: border-box;
         }
     }
 }

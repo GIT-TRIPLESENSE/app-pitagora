@@ -22,9 +22,9 @@
             <div class="icons-container row">
                 <!-- da definire dimensione testo e icona-->
                 <div>
-                    <img class="icon" src="../../static/assets/bell-notifications-on-ico.svg">
+                    <img class="icon" id="bell" src="../../static/assets/Notification.svg">
                 </div>
-                <div >
+                <div>
                     <img class="icon" id="user" src="../../static/assets/Profile.svg">
                 </div>
             </div>
@@ -37,38 +37,38 @@
                 <div class="top-menu flex-column">
                     <!-- aggiungere la classe --active-- per l'elemento selezionato -->
                     <div class="menu-element active">
-	
+
                         <img class="icon" src="../../static/assets/Situation.svg">
                         <p>La mia situazione</p>
                     </div>
                     <div class="menu-element">
-	
-                            <img class="icon" src="../../static/assets/Request.svg">
+
+                        <img class="icon" src="../../static/assets/Request.svg">
                         <p>Le mie richieste</p>
                     </div>
                     <div class="menu-element">
-	
-                            <img class="icon" src="../../static/assets/Archive.svg">
+
+                        <img class="icon" src="../../static/assets/Archive.svg">
                         <p>Archivio</p>
                     </div>
                 </div>
                 <div class="bottom-menu flex-column">
-                    <div class="wrapper">
-                        <div class="button">
+                    <div class="wrapper flex-column">
+                        <div class="button row-start">
                             <p>Documenti Legali</p>
                             <div class="arrow"></div>
                         </div>
-                        <div class="button">
+                        <div class="button row-start">
                             <p>F.A.Q & Info</p>
                             <div class="arrow"></div>
                         </div>
                     </div>
                     <div class="cta-container card flex-column">
                         <div class="row">
-                            <img src="../../static/assets/phone-icon.png">
+                            <img src="../../static/assets/mail-ico.svg">
                             <p>Hai bisogno d'aiuto?</p>
                         </div>
-                        <button id="contact-btn" class="button-request">
+                        <button id="contact-btn">
                             <!-- p 16px -->
                             <p><strong>SCRIVICI</strong></p>
                         </button>
@@ -76,11 +76,16 @@
                 </div>
             </div>
             <div class="main flex-column">
-                <div class="title-container row title desktop-only">
-                    <h2>Il tuo finanziamento <span>228002</span></h2>
-                    <div class="buttons-title-container row ">
-                        <div id="left-arrow" class="button">left</div>
-                        <div id="right-arrow" class="button">right</div>
+                <div class="title-container row-start title desktop-only">
+                    <h2>Il tuo finanziamento</h2>
+                    <div class="buttons-title-container row">
+                        <div id="left-arrow" class="button">
+                            <img src="../../static/assets/back.svg">
+                        </div>
+                        <span>228002</span>
+                        <div id="right-arrow" class="button">
+                            <img src="../../static/assets/forward.svg">
+                        </div>
                     </div>
                 </div>
                 <div class="title-container row title mobile-only">
@@ -416,25 +421,112 @@
         <!-- componente footer menu -->
         <div class="footer-menu-container row mobile-only">
             <!-- inserire classe --active-- per button attivo -->
-            <div id="situation" class="button flex-column active">
-                <img class="menu-icon" src="../../static/assets/user-icon.png">
+            <div id="situation" class="menu-btn button flex-column active">
+                <!-- <img class="menu-icon" src="../../static/assets/Situation.svg"> -->
+                <svg class="menu-icon" width="32px" height="32px" viewBox="0 0 32 32" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: sketchtool 61 (101010) - https://sketch.com -->
+                    <title>F8FBF0F9-0384-45BB-B8AF-9E4C33964109</title>
+                    <desc>Created with sketchtool.</desc>
+                    <g id="Asset-Artboard-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Icons/Utility/Placeholder-Icons/Utility/Situation" fill="#2D85EB">
+                            <path
+                                d="M4,28 L28,28 L28,4 L4,4 L4,28 Z M26.8888889,2 L5.11111111,2 C3.4,2 2,3.4 2,5.11111111 
+                            L2,26.8888889 C2,28.6 3.4,30 5.11111111,30 L26.8888889,30 C28.6,30 30,28.6 30,26.8888889 L30,5.11111111 
+                            C30,3.4 28.6,2 26.8888889,2 L26.8888889,2 Z M23,22.6111111 C23,20.2777778 18.3333333,19.1111111 16,19.1111111 
+                            C13.6666667,19.1111111 9,20.2777778 9,22.6111111 L9,23.7777778 L23,23.7777778 L23,22.6111111 Z M16,16.3888889 
+                            C17.9288889,16.3888889 19.5,14.8177778 19.5,12.8888889 C19.5,10.96 17.9288889,9.38888889 16,9.38888889 C14.0711111,9.38888889 
+                            12.5,10.96 12.5,12.8888889 C12.5,14.8177778 14.0711111,16.3888889 16,16.3888889 L16,16.3888889 Z"
+                                id="Fill-1">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
                 <p>La mia situazione</p>
             </div>
-            <div id="requests" class="button flex-column">
-                <img class="menu-icon" src="../../static/assets/richieste-icon.png">
+
+            <div id="requests" class="menu-btn button flex-column">
+                <!-- <img class="menu-icon" src="../../static/assets/Request.svg"> -->
+                <svg class="menu-icon" width="32px" height="32px" viewBox="0 0 32 32" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Asset-Artboard-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Icons/Utility/Placeholder-Icons/Utility/Request" fill="#002956">
+                            <path
+                                d="M14.90625,18.0234375 L17.09375,18.0234375 L17.09375,15.8359375 L14.90625,15.8359375 L14.90625,18.0234375 Z M14.578125,9.8203125 L12.390625,9.8203125 
+                                C12.390625,8.81991406 12.8196484,7.86178906 13.5677187,7.19159375 C14.3365703,6.50275 15.3750859,6.17342187 16.4169375,6.28821094 C18.0733125,6.47048437 
+                                19.4075234,7.79342969 19.5893047,9.43389062 C19.7555,10.93375 18.8797891,11.9991719 18.2065859,12.6701328 C18.0377656,12.8384062 17.8824531,12.9854062 
+                                17.7454609,13.1150156 C17.1151328,13.7114375 17.0939688,13.7672187 17.0939688,14.0933203 L17.0939688,14.140625 L14.9064688,14.140625 L14.9064688,14.0933203 
+                                C14.9064688,12.7896797 15.5551719,12.1758672 16.2419922,11.5260703 C16.3755391,11.3996875 16.5136797,11.2690391 16.6623203,11.1208906 C17.2386172,10.5464531 
+                                17.4637109,10.1140391 17.4150938,9.67495312 C17.3451484,9.04369531 16.8246875,8.53389844 16.1775703,8.46264062 C15.7466875,8.41511719 15.3382266,8.54242969 
+                                15.0274375,8.82089844 C14.7376484,9.08039062 14.578125,9.43536719 14.578125,9.8203125 L14.578125,9.8203125 Z M26.71875,27.8125 L5.28125,27.8125 C4.67815625,27.8125 
+                                4.1875,27.3218438 4.1875,26.71875 L4.1875,15.0300078 L16,23.8162656 L27.8125,15.0300078 L27.8125,26.71875 C27.8125,27.3218438 27.3218438,27.8125 26.71875,27.8125 L26.71875,27.8125 
+                                Z M6.6484375,14.1341719 L5.01803906,12.9214219 L6.6484375,11.7054453 L6.6484375,14.1341719 Z M23.1640625,4.1875 L23.1640625,15.7612891 L16,21.0899844 L8.8359375,15.7612891 
+                                L8.8359375,4.1875 L23.1640625,4.1875 Z M26.9819063,12.9214766 L25.3515625,14.1341719 L25.3515625,11.7054453 L26.9819063,12.9214766 Z M25.3515625,8.97659375 L25.3515625,2 L6.6484375,2 
+                                L6.6484375,8.97653906 L2,12.4435078 L2,26.71875 C2,28.5280313 3.47196875,30 5.28125,30 L26.71875,30 C28.5280313,30 30,28.5280313 30,26.71875 L30,12.4435078 L25.3515625,8.97659375 Z"
+                                id="Fill-1">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
                 <p>Richieste</p>
             </div>
-            <div id="archive" class="button flex-column">
-                <img class="menu-icon" src="../../static/assets/archivio-icon.png">
+            <div id="archive" class="menu-btn button flex-column">
+                <!-- <img class="menu-icon" src="../../static/assets/Archive.svg"> -->
+                <svg class="menu-icon" width="32px" height="32px" viewBox="0 0 32 32" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: sketchtool 61 (101010) - https://sketch.com -->
+                    <g id="Asset-Artboard-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Icons/Utility/Placeholder-Icons/Utility/Archive" fill="#002956">
+                            <path d="M28.4444444,9.77777778 L28.4444444,30 L3.55555556,30 L3.55555556,9.77777778 L28.4444444,9.77777778 Z M19.8888889,14.4444444 L12.1111111,14.4444444 C11.6817778,14.4444444
+                            11.3333333,14.7928889 11.3333333,15.2222222 L11.3333333,17.5555556 L20.6666667,17.5555556 L20.6666667,15.2222222 C20.6666667,14.7928889 20.3182222,14.4444444 19.8888889,14.4444444 Z M30,2 
+                            L30,8.22377778 L2,8.22377778 L2,2 L30,2 Z" id="Combined-Shape">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
                 <p>Archivio</p>
             </div>
-            <div id="contactUs" class="button flex-column">
-                <img class="menu-icon" src="../../static/assets/contact_us-icon.png">
+            <div id="contactUs" class="menu-btn button flex-column">
+                <!-- <img class="menu-icon" src="../../static/assets/mail-ico.svg"> -->
+                <svg class="menu-icon" width="32px" height="32px" viewBox="0 0 18 13" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: sketchtool 61 (101010) - https://sketch.com -->
+                    <g id="web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Dashboard--alarm" transform="translate(-24.000000, -686.000000)" fill="#002855"
+                            fill-rule="nonzero">
+                            <g id="Group-10" transform="translate(8.000000, 600.000000)">
+                                <g id="help-block" transform="translate(0.000000, 68.000000)">
+                                    <g id="Group-5" transform="translate(16.000000, 12.000000)">
+                                        <g id="Group-4">
+                                            <g id="np_mail_650801_000000" transform="translate(0.000000, 6.000000)">
+                                                <path
+                                                    d="M1.71428571,0 C0.771771429,0 0,0.780346667 0,1.73333333 L0,11.2666667 C0,12.2196533 0.771771429,13 1.71428571,13 
+                                                L16.2857143,13 C17.2282286,13 18,12.2196533 18,11.2666667 L18,1.73333333 C18,0.780346667 17.2282286,0 16.2857143,0 L1.71428571,0 
+                                                Z M1.71428571,0.866666667 L16.2857143,0.866666667 C16.7678571,0.866666667 17.1428571,1.24583333 17.1428571,1.73333333 L17.1428571,11.2666667 
+                                                C17.1428571,11.7541667 16.7678571,12.1333333 16.2857143,12.1333333 L1.71428571,12.1333333 C1.23214286,12.1333333 0.857142857,11.7541667 0.857142857,11.2666667 
+                                                L0.857142857,1.73333333 C0.857142857,1.24583333 1.23214286,0.866666667 1.71428571,0.866666667 Z M2.73214286,2.37657333 C2.56640571,2.39519323 2.42661429,2.50945067 
+                                                2.37304286,2.668575 C2.32030929,2.82853567 2.36383521,3.00542667 2.48437071,3.121365 L5.95322786,6.567665 L2.49122786,9.865115 C2.31963214,10.0293072 2.31209786,10.3035183 
+                                                2.47448679,10.47787 C2.63687464,10.6513723 2.90890821,10.6589903 3.08050821,10.4947971 L6.56929393,7.17719708 L7.78804393,8.38918708 C8.45183679,9.04765875 9.53412964,9.04681375 
+                                                10.1987582,8.38918708 L11.4309011,7.17043708 L14.9196868,10.4949704 C15.0912825,10.6591626 15.3633225,10.6515468 15.5257082,10.4780433 C15.6880961,10.3036938 15.6805639,10.0294783 
+                                                15.5089671,9.86528833 L12.04011,6.56783833 L15.51561,3.12153833 C15.5993143,3.0411355 15.6470271,2.93026283 15.6487464,2.814305 C15.6503747,2.69750867 15.6060107,2.58494167 15.5248179,2.50284667 
+                                                C15.4436229,2.4199045 15.3331329,2.37335367 15.2184536,2.37420083 C15.1029407,2.37420083 14.9932821,2.42159667 14.912925,2.505386 L9.59606786,7.76626933 C9.26375357,8.09549433 8.72218929,8.09549433 
+                                                8.39071071,7.76626933 L3.08713929,2.505386 C2.99506286,2.40974717 2.86363929,2.36150633 2.73223929,2.37674017 L2.73214286,2.37657333 Z"
+                                                    id="mail-ico">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
                 <p>Parla con noi</p>
             </div>
         </div>
     </div>
     </div>
+
 </body>
 
 </html>

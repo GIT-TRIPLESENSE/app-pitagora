@@ -22,22 +22,22 @@
 				flex: 7;
 				align-items: flex-start;
 				padding: 10px;
+				padding-left: 0;
 				box-sizing: border-box;
 
 				.title-container {
 					position: relative;
 					h2 {
 						margin: 0;
-
-						span {
-							color: #0063CC;
-						}
 					}
 
 					.buttons-title-container {
-						position: absolute;
-						top: 30px;
-						right: 0;
+						span {
+							font-size: 24px;	
+							font-weight: bold;	
+							letter-spacing: -0.96px;
+							color: #0063CC;
+						}
 						.button {
 							padding: 0 5px;
 							opacity: 0.2;
@@ -107,6 +107,12 @@
 					}
 				}
 			}
+		}
+		#left-arrow {
+			padding: 5px;
+		}
+		#right-arrow {
+			padding: 5px;
 		}
 	}
 

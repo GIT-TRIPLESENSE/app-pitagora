@@ -3,13 +3,27 @@
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
+    box-shadow: 0 4px 12px 6px rgba(0,0,0,.06);
+
+    .menu-btn.active{
+        color: #007AFF;
+        .menu-icon {
+            path{
+                fill: #007AFF;
+            }
+        }
+    }
 
     p {
         font-size: 10px;
     }
 
     .menu-icon {
-        height: auto;
-        width: 30px;
+        height: 25px;
+        width:  25px;
+        path {
+            fill: #666666;
+
+        }
     }
 }
