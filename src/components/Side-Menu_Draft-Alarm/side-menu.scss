@@ -13,13 +13,6 @@
             align-items: center;
             padding: 5px;
 
-            .dotted-cube {
-                height: 25px;
-                width: 25px;
-                border: 2px dotted #2D85EB;
-                margin-right: 5px;
-            }
-
             &.active::before {
                 content: "";
                 height: 56px;
