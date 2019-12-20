@@ -3,9 +3,7 @@ html {
 
 	height: 100%;
 }
-	
 	.page-container {
-
 		&.dashboard-login {
 			background-color: #F1F2F8;
 			height: 100%;
@@ -84,8 +82,10 @@ html {
 	}
 
 
+
+
 	@import 'components/Head/head.scss';
-	@import 'components/Left-Element/side-element.scss';
+	@import 'components/Login-Image-Component/side-element.scss';
 	@import 'components/Login-Form/login-form.scss';
 	@import 'components/Slider/slider.scss';
 	@import 'components/Login-Mobile/login-mobile.scss';
