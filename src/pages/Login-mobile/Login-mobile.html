@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login 0.1.0</title>
+</head>
+
+<body>
+    <div class="page-container login-mobile-page flex-column">
+        <div class="head-container row">
+            <div id="goBack" class="button">
+                Indietro
+            </div>
+        </div>
+        <div class="main-container flex-column">
+            <h2>Effettua l'accesso</h2>
+            <div class="form-container flex-column">
+                    <form>
+                            <!-- per errore password aggiungere classe --error-- -->
+                            <div class="input-container">
+                                <div class="input-fields flex-column">
+                                    <input type="text" id="username" name="username" placeholder="Username" />
+                                    <div class="password-container row">
+                                        <input type="password" id="password" class="error" name="password"
+                                            placeholder="Password" />
+                                        <div class="password-eye button active">
+                                            <!-- cambiare l'asset con quello più scuro, ho applicato l'opacity se non selezionato -->
+                                            <img src="../../static/assets/password-eye-icon.png">
+                                        </div>
+                                    </div>
+                                    <!-- aggiungere la classe --active-- se bottone premuto -->
+                                </div>
+                                <div class="error-msg-container row">
+                                    <img src="../../static/assets/error-icon.png">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="utilities-login">
+                                <div class="remember-login-wrapper">
+                                    <div class="row">
+                                        <input id="remember-login" type="checkbox" />
+                                        <label class="checkbox-cover" for="remember-login"></label>
+                                        <label for="remember-login">Resta collegato</label>
+                                    </div>
+                                </div>
+                                <a id="access-problem" class="link" href="something">Problemi d'accesso?</a>
+                            </div>
+                            <div class="request-container">
+                                <button type="submit" id="sendRequest" class="button-request">
+                                    <p>ACCEDI ALL'AREA PERSONALE</p>
+                                </button>
+                            </div>
+                        </form>
+                    <div class="registration-container">
+                        <p>
+                            Non hai l'account?
+                            <a id="registration-link" class="link" href="something">Registrati</a>
+                        </p>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+
+</html>
