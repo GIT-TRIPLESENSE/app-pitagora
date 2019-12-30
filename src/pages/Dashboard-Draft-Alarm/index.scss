@@ -3,14 +3,14 @@
 	&.dashboard-alarm {
 
 		height: 100%;
-		background-color: #F1F2F8;
+		background-color: $text-secondary-color;
 
 		.head-container {
 			display: flex;
 			width: 100%;
 			justify-items: start;
 			align-items: center;
-			background-color: #FFFFFF;
+			background-color: $background-mobile-color;
 			box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
 		}
 
@@ -36,7 +36,7 @@
 							font-size: 24px;	
 							font-weight: bold;	
 							letter-spacing: -0.96px;
-							color: #0063CC;
+							color: $form-border-color;
 						}
 						.button {
 							padding: 0 5px;

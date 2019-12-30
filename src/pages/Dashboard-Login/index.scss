@@ -5,7 +5,7 @@ html {
 }
 	.page-container {
 		&.dashboard-login {
-			background-color: #F1F2F8;
+			background-color: $text-secondary-color;
 			height: 100%;
 
 			.head-container {
@@ -19,7 +19,7 @@ html {
 			.main-container {
 				display: flex;
 				justify-content: space-between;
-				width: 80%;
+				width: 90%;
 				flex: 11;
 			}
 
@@ -34,6 +34,8 @@ html {
 			
 
 			&.is-mobile {
+				background-color: #FFF;
+				color: $accent-color;
 				.mobile-only {
 					display: flex !important;
 				}
@@ -82,7 +84,7 @@ html {
                 p {
                     margin: 0;
                     opacity: 0.6;
-                    color: #002855;
+                    color: $accent-color;
                     font-size: 14px;
                     line-height: 16px;
 				}
@@ -96,6 +98,7 @@ html {
                     }
 				}
 			}
+			
 
 		}
 	}

@@ -8,7 +8,7 @@
     .input-fields {
         width: 100%;
 
-        .container {
+        .input-wrapper {
             width: 100%;
 
             .input-label {
@@ -24,16 +24,16 @@
                     }
 
                     .input-field {
-                        padding: 1.4rem 0.8rem 0.34rem;
+                        padding: 1.4rem 0.8rem 10px;
                     }
                 }
             }
 
             input {
                 height: 49px;
-                border: 2px solid #0063CC;
+                border: 2px solid $form-border-color;
                 border-radius: 5px;
-                background-color: #FFFFFF;
+                background-color: $background-mobile-color;
                 margin-bottom: 15px;
                 padding: 0 10px;
                 width: 100%;
@@ -44,7 +44,7 @@
 
             &.error {
                 input {
-                    border: 2px solid red;
+                    border: 2px solid $error-color;
                     margin: 0;
                 }
 
@@ -62,7 +62,7 @@
                         font-size: 12px;
                         line-height: 20px;
                         margin: 0;
-                        color: red;
+                        color: $error-color;
                     }
                 }
             }
@@ -74,9 +74,9 @@
             z-index: 1;
             width: 100%;
             padding: 0 0.8rem;
-            margin-top: 0.2rem;
+            margin-top: 5px;
             overflow: hidden;
-            font-size: 0.8rem;
+            font-size: 11px;
             color: var(--blue);
             opacity: 0;
             transition: all 200ms ease-out;

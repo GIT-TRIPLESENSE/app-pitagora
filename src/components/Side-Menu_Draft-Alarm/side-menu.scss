@@ -55,12 +55,12 @@
             border-radius: 18px;
             width: 100%;
             font-weight: bold;
-            background-color: #FFFFFF;
+            background-color: $background-mobile-color;
         }
 
         #contact-btn:hover {
             width: 100%;
-            color: #F1F2F8;
+            color: $text-secondary-color;
             border-radius: 24px;
             background: linear-gradient(270deg, #0063CE 0%, #002855 100%);
             cursor: pointer;

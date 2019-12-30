@@ -35,7 +35,7 @@
             align-items: flex-start;
             box-sizing: border-box;
             padding: 20px 30px;
-            background-color: #FFFFFF;
+            background-color: $background-mobile-color;
             box-shadow: 0 4px 12px 6px rgba(0, 0, 0, 0.06);
 
             .pratica-body-container {
@@ -90,9 +90,9 @@
 }
 
 .card-summary {
-    background-color: #0063CC;
+    background-color: $form-border-color;
     border-radius: 21.12px;
-    color: #FFFFFF;
+    color: $background-mobile-color;
     box-sizing: border-box;
     position: relative;
     padding: 10px 20px 100px;
@@ -139,7 +139,7 @@
     }
 
     .loan-info-container {
-        background-color: #FFFFFF;
+        background-color: $background-mobile-color;
         width: 90%;
         color: #4148A7;
         min-height: 25%;
@@ -234,8 +234,8 @@
 
             &.active {
                 font-weight: bold;
-                background-color: #0063CC;
-                color: #FFFFFF;
+                background-color: $form-border-color;
+                color: $background-mobile-color;
 
             }
         }
@@ -292,7 +292,7 @@
 
     p {
         opacity: 0.7;
-        color: #002855;
+        color: $accent-color;
         font-size: 12px;
         line-height: 16px;
     }

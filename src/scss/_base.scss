@@ -3,7 +3,7 @@ html {
 	margin: 0;
 	font-family: Roboto;
 	//font-size: 14px;
-	background-color: #F1F2F8;
+	background-color: $text-secondary-color;
 }
 
 
@@ -22,7 +22,7 @@ html {
 	font-size: 30px;
 	line-height: 39px;
 	font-family: Roboto-Bold;
-	color: #002855;
+	color: $accent-color;
 }
 
 .title {
@@ -38,7 +38,7 @@ html {
 // button FORM
 .button-request {
 	width: 100%;
-	color: #F1F2F8;
+	color: $text-secondary-color;
 	font-weight: bold;
 	border-radius: 24px;
 	background: linear-gradient(270deg, #0063CE 0%, #002855 100%);
@@ -84,8 +84,13 @@ html {
 
 .card {
 	border-radius: 16px;
-	background-color: #FFFFFF;
+	background-color: $background-mobile-color;
 	box-shadow: 0 4px 12px 6px rgba(0, 0, 0, 0.06);
+}
+
+.link{
+	font-family: roboto-bold;
+
 }
 
 @import '../pages/Dashboard-Login/index.scss';

@@ -19,16 +19,17 @@
 
         p {
             opacity: 0.9;
-            color: #002855;
+            color: $accent-color;
             font-size: 16px;
             line-height: 24px;
             text-align: center;
+            margin-bottom: 0;
         }
 
-        p#access {
+        .access {
             margin: 0;
             opacity: 0.5;
-            color: #002855;
+            color: $accent-color;
             font-size: 12px;
             font-weight: bold;
             line-height: 24px;
@@ -37,10 +38,10 @@
 
     }
     .registration-container{
-        color: #002855;
+        color: $accent-color;
         opacity: 0.9;
         a:link {
-            color: #002855;
+            color: $accent-color;
         }
-}
+    }
 }

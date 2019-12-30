@@ -40,7 +40,7 @@
                 p {
                     opacity: 0.8;
                     margin-top: 0;
-                    color: #313131;
+                    color: $text-color;
                     font-size: 14px;
                     line-height: 20px;
                     text-align: center;
@@ -50,12 +50,24 @@
                     font-size: 24px;	
                     font-weight: bold;	
                     line-height: 32px;
+                    margin-bottom: 0;
+                    margin-top: 10px;
+                    color: $accent-color;
                 }
             }
 
             .request-container {
                 width: 100%;
                 flex: 1;
+                .button-request-slider{
+                    width: 100%;
+                    color: $text-secondary-color;
+                    font-weight: bold;
+                    border-radius: 24px;
+                    background: linear-gradient(270deg, #0063CE 0%, #002855 100%);
+                    cursor: pointer;
+                    font-size: 14px;
+                }
             }
 
             &.slide-active {

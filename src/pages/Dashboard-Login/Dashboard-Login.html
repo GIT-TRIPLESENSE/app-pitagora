@@ -47,7 +47,7 @@
 							<p>Scopri i prodotti Pitagora!</p>
 						</div>
 						<div class="request-container">
-							<button id="products-btn" class="button-request">
+							<button id="products-btn" class="button-request-slider">
 								<p>SCOPRI I PRODOTTI</p>
 							</button>
 						</div>
@@ -78,7 +78,7 @@
 					<button id="touchId"></button>
 					<!-- <img src="../../static/assets/fingerprint.png" /> -->
 					<p>Login con <strong>Touch ID</strong></p>
-					<button id="access" class="button">ACCESSO CLASSICO</button>
+					<button id="access" class="button access">ACCESSO CLASSICO</button>
 				</div>
 				<div class="registration-container">
 					<p>
@@ -90,7 +90,7 @@
 
 			<!--login form component-->
 			<div class="login-form-container desktop-only">
-				<div class="login-form-content">
+				<div class="login-form-content flex-column">
 					<div class="login-form-content-wrapper">
 						<div class="login-header">
 							<p>Login</p>
@@ -105,7 +105,7 @@
 
 										<!-- inizio input container -->
 										<!-- inserire al container la class --error-- per messaggi errore-->
-										<div class="container">
+										<div class="input-wrapper">
 											<!-- inserire la classe -- has-input -- a input-label   per alzare lo span -->
 											<label class="input-label">
 												<span class="input-span">Username</span>
@@ -120,7 +120,7 @@
 										<!-- fine input container -->
 
 										<!-- inizio password input container -->
-										<div class="password-container container">
+										<div class="password-container input-wrapper">
 											<label class="input-label">
 												<span class="input-span">Password</span>
 												<input class="input-field" type="password" id="password" name="password"
@@ -153,7 +153,7 @@
 											<label for="remember-login">Resta collegato</label>
 										</div>
 									</div>
-									<a id="access-problem" class="link" href="something">Problemi d'accesso?</a>
+									<a id="access-problem" href="something">Problemi d'accesso?</a>
 								</div>
 							</div>
 								<div class="request-container">

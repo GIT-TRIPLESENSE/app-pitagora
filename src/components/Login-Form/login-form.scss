@@ -10,11 +10,10 @@
         border-radius: 8px;
         background-color: #fff;
         box-shadow: 0 4px 12px 6px rgba(0, 0, 0, .06);
-        flex-direction: column;
 
         @media screen and (min-width: 912px) {
             min-width: 400px;
-            max-width: 500px;
+            max-width: 400px;
         }
 
 
@@ -23,6 +22,8 @@
             width: 100%;
             padding: 24px;
             box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
 
             .login-header {
 
@@ -37,12 +38,12 @@
     }
 
     .registration-container {
-        color: #002855;
+        color: $accent-color;
         opacity: 0.9;
         padding-top: 10px;
 
         a:link {
-            color: #002855;
+            color: $accent-color;
         }
     }
 }
@@ -71,6 +72,10 @@
         display: flex;
         justify-content: center;
         align-items: flex-end;
+    }
+
+    .utilities-login {
+        
     }
 }
 
@@ -128,10 +133,10 @@
             margin-right: 10px;
             display: inline-block;
             vertical-align: text-top;
-            background-color: #FFFFFF;
+            background-color: $background-mobile-color;
             width: 20px;
             height: 20px;
-            border: 2px solid #0063CC;
+            border: 2px solid $form-border-color;
             border-radius: 2px;
 
         }
@@ -149,15 +154,20 @@
             top: 1px;
             width: 9px;
             height: 15px;
-            border-right: 2px solid #0063cc;
-            border-bottom: 2px solid #0063cc;
+            border-right: 2px solid $form-border-color;
+            border-bottom: 2px solid $form-border-color;
             transform: rotate(45deg);
         }
     }
 
+    // div {
+    //     padding: 5px 0;
+    // }
+
     a {
-        color: #002855;
+        color: $accent-color;
         padding: 3px;
+        padding: 5px 3px;
     }
 
 
