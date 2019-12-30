@@ -7,32 +7,73 @@
 
     .login-form-content {
         min-height: 500px;
-        min-width: 400px;
         border-radius: 8px;
         background-color: #fff;
         box-shadow: 0 4px 12px 6px rgba(0, 0, 0, .06);
         flex-direction: column;
 
+        @media screen and (min-width: 912px) {
+            min-width: 400px;
+            max-width: 500px;
+        }
+
+
         .login-form-content-wrapper {
-            height: 500px;
+            height: 100%;
             width: 100%;
             padding: 24px;
             box-sizing: border-box;
 
             .login-header {
-                p {
-                    margin: 0;
-                    opacity: 0.6;
-                    color: #002855;
-                    font-size: 14px;
-                    line-height: 16px;
-                }
 
                 h3 {
-                    width: 50%;
+                    //width: 65%;
+                    // @media screen and (max-width: 320px) {
+                    //     width: 100%;
+                    // }
                 }
             }
         }
+    }
+
+    .registration-container {
+        color: #002855;
+        opacity: 0.9;
+        padding-top: 10px;
+
+        a:link {
+            color: #002855;
+        }
+    }
+}
+
+@media (max-width:912px) and (min-width:450px) {
+    .button-request {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .login-form-content {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        min-width: 100%;
+    }
+
+    .login-form-content-wrapper {
+        height: 100%;
+    }
+
+    .request-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .button-request {
+        min-width: 300px;
     }
 }
 
@@ -43,6 +84,8 @@
     flex-direction: column;
     align-items: center;
     height: 80%;
+    padding-bottom: 20px;
+    box-sizing: border-box;
 
     form {
         display: flex;
@@ -50,98 +93,14 @@
         align-items: center;
         width: 100%;
         height: 100%;
-        .password-container{
-            width: 100%;
-            position: relative;
-            .password-eye {
-                position: absolute;
-                right: 5px;
-                bottom: 40%;
-    
-                img {
-                    width: 30px;
-                    height: auto;
-                    opacity: 0.6;
-                }
-    
-                &.active {
-                    opacity: 1;
-                }
-            }
-        }
-
 
         .request-container {
             width: 80%;
-            flex: 1;
         }
     }
 }
 
-.input-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    -webkit-box-flex: 1;
-    position: relative;
-    .input-fields{
-        width: 100%;
 
-        input {
-            height: 3.5em;
-            border: 2px solid #0063CC;
-            border-radius: 5px;
-            background-color: #FFFFFF;
-            margin-bottom: 15px;
-            padding: 0 10px;
-            width: 100%;
-            box-sizing: border-box;
-    
-            &#password {
-                //background-image: url('eye');
-                background-position: 0 5px;
-                background-repeat: no-repeat;
-                position: relative;
-                -ms-behavior: hide;
-            }
-            
-        }
-        input::-ms-reveal, input::-ms-clear {
-            display: none;
-        }
-        
-    }
-
-}
-
-.error-msg-container {
-    display: none;
-}
-
-.input-container.error {
-    flex: 3;
-    #password {
-        border: 2px solid red;
-    }
-
-    .error-msg-container {
-        display: flex;
-        padding-bottom: 10px;
-
-        img {
-            width: 32px;
-            height: auto;
-            padding: 2px;
-        }
-
-        p {
-            font-size: 12px;
-            line-height: 20px;
-            margin: 0;
-            color: red;
-        }
-    }
-}
 
 .utilities-login {
     display: flex;
@@ -196,4 +155,6 @@
         color: #002855;
         padding: 3px;
     }
+
+
 }

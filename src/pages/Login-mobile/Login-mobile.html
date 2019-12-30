@@ -11,58 +11,90 @@
 
 <body>
     <div class="page-container login-mobile-page flex-column">
-        <div class="head-container row">
-            <div id="goBack" class="button">
-                Indietro
-            </div>
-        </div>
-        <div class="main-container flex-column">
-            <h2>Effettua l'accesso</h2>
-            <div class="form-container flex-column">
-                    <form>
-                            <!-- per errore password aggiungere classe --error-- -->
-                            <div class="input-container">
-                                <div class="input-fields flex-column">
-                                    <input type="text" id="username" name="username" placeholder="Username" />
-                                    <div class="password-container row">
-                                        <input type="password" id="password" class="error" name="password"
-                                            placeholder="Password" />
-                                        <div class="password-eye button active">
-                                            <!-- cambiare l'asset con quello più scuro, ho applicato l'opacity se non selezionato -->
-                                            <img src="../../static/assets/password-eye-icon.png">
+            <div class="login-form-container desktop-only">
+                    <div class="login-form-content">
+                        <div class="login-form-content-wrapper">
+                            <div class="login-header">
+                                <p>Indietro</p>
+                                <h3 class="main-title">Effettua l'accesso</h3>
+                            </div>
+                            <div class="form-container">
+                                <form>
+                                    <!-- per errore password aggiungere classe --error-- a input-container-->
+                                    <div class="input-container">
+                                        <div class="input-fields flex-column">
+    
+                                            <!-- inizio input container -->
+                                            <!-- inserire al container la class --error-- per messaggi errore-->
+                                            <div class="container">
+                                                <!-- inserire la classe -- has-input -- a input-label   per alzare lo span -->
+                                                <label class="input-label">
+                                                    <span class="input-span">Username</span>
+                                                    <input class="input-field" type="text" id="username" name="username"
+                                                        placeholder="Username" />
+                                                </label>
+                                                <span class="error-msg-container row-start">
+                                                    <img src="../../static/assets/placeholders/error-icon.png">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                </span>
+                                            </div>
+                                            <!-- fine input container -->
+    
+                                            <!-- inizio password input container -->
+                                            <div class="password-container container">
+                                                <label class="input-label">
+                                                    <span class="input-span">Password</span>
+                                                    <input class="input-field" type="password" id="password" name="password"
+                                                    placeholder="Password" />
+                                                    <div class="password-eye button active">
+                                                        <!-- cambiare l'asset con quello più scuro, ho applicato l'opacity se non selezionato -->
+                                                        <img src="../../static/assets/placeholders/password-eye-icon.png">
+                                                    </div>
+                                                </label>
+                                                <span class="error-msg-container row-start">
+                                                    <img src="../../static/assets/placeholders/error-icon.png">
+    
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                </span>
+                                            </div>
+                                            <!-- fine password input container -->
+    
+                                            <!-- aggiungere la classe --active-- se bottone premuto -->
+                                        </div>
+                                        <div class="error-msg-container row-start">
+                                            <img src="../../static/assets/placeholders/error-icon.png">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                         </div>
                                     </div>
-                                    <!-- aggiungere la classe --active-- se bottone premuto -->
-                                </div>
-                                <div class="error-msg-container row">
-                                    <img src="../../static/assets/error-icon.png">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
-                            </div>
-                            <div class="utilities-login">
-                                <div class="remember-login-wrapper">
-                                    <div class="row">
-                                        <input id="remember-login" type="checkbox" />
-                                        <label class="checkbox-cover" for="remember-login"></label>
-                                        <label for="remember-login">Resta collegato</label>
+                                    <div class="utilities-login flex-column">
+                                        <div class="access-problem-container">
+                                            <a id="access-problem" class="link" href="something">Problemi d'accesso?</a>
+                                        </div>
+
+                                            <div class="remember-login-wrapper row-start">
+                                                <div class="row">
+                                                    <input id="remember-login" type="checkbox" />
+                                                    <label class="checkbox-cover" for="remember-login"></label>
+                                                    <label for="remember-login">Resta collegato</label>
+                                                </div>
+                                            </div>
                                     </div>
+                                    <div class="request-container">
+                                        <button type="submit" id="sendRequest" class="button-request">
+                                            <p>ACCEDI ALL'AREA PERSONALE</p>
+                                        </button>
+                                    </div>
+                                </form>
+                                <div class="registration-container">
+                                    <p>
+                                        Non hai l'account?
+                                        <a id="registration-link" class="link" href="something">Registrati</a>
+                                    </p>
                                 </div>
-                                <a id="access-problem" class="link" href="something">Problemi d'accesso?</a>
                             </div>
-                            <div class="request-container">
-                                <button type="submit" id="sendRequest" class="button-request">
-                                    <p>ACCEDI ALL'AREA PERSONALE</p>
-                                </button>
-                            </div>
-                        </form>
-                    <div class="registration-container">
-                        <p>
-                            Non hai l'account?
-                            <a id="registration-link" class="link" href="something">Registrati</a>
-                        </p>
+                        </div>
                     </div>
                 </div>
-        </div>
     </div>
 </body>
 

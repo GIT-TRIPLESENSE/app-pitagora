@@ -31,6 +31,8 @@ html {
 				display: flex;
 			}
 
+			
+
 			&.is-mobile {
 				.mobile-only {
 					display: flex !important;
@@ -58,7 +60,7 @@ html {
 						-webkit-box-flex: 1;
 						flex: 1;
 						display: flex;
-
+				
 						.btn-slider {
 							// PLACEHOLDER PER IMMAGINE
 							height: 8px;
@@ -76,7 +78,24 @@ html {
 				}
 
 			}
+			.login-header {
+                p {
+                    margin: 0;
+                    opacity: 0.6;
+                    color: #002855;
+                    font-size: 14px;
+                    line-height: 16px;
+				}
 
+				h3 {
+					width: 65%;
+					font-size: 24px;
+					line-height: 32px;
+					@media screen and (max-width: 320px) {
+                        width: 100%;
+                    }
+				}
+			}
 
 		}
 	}
@@ -89,3 +108,4 @@ html {
 	@import 'components/Login-Form/login-form.scss';
 	@import 'components/Slider/slider.scss';
 	@import 'components/Login-Mobile/login-mobile.scss';
+	@import 'components/Input-component/input.scss';
