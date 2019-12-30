@@ -21,14 +21,15 @@ html {
 .main-title {
 	font-size: 30px;
 	line-height: 39px;
-    font-family: Roboto-Bold;
-    color: #002855;
+	font-family: Roboto-Bold;
+	color: #002855;
 }
 
 .title {
 	color: #072952;
 	margin: 0;
 }
+
 .button {
 	cursor: pointer;
 }
@@ -43,6 +44,11 @@ html {
 	background: linear-gradient(270deg, #0063CE 0%, #002855 100%);
 	cursor: pointer;
 	font-size: 14px;
+
+	@media screen and (max-width: 912px) {
+		min-width: 300px;
+		max-height: 48px;
+	}
 
 
 	&.disabled {
@@ -75,6 +81,7 @@ html {
 	padding: 0 10px;
 	cursor: pointer;
 }
+
 .card {
 	border-radius: 16px;
 	background-color: #FFFFFF;
