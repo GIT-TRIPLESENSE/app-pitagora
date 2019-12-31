@@ -7,105 +7,107 @@
 
     .input-fields {
         width: 100%;
-
-        .input-wrapper {
-            width: 100%;
-
-            .input-label {
-                position: relative;
-                display: block;
-                color: rgba(0, 0, 0, 0.6);
-                font-size: 10px;
-
-                &.has-input {
-                    .input-span {
-                        opacity: 1;
-                        transform: none;
-                    }
-
-                    .input-field {
-                        padding: 1.4rem 0.8rem 10px;
-                    }
-                }
-            }
-
-            input {
-                height: 49px;
-                border: 2px solid $form-border-color;
-                border-radius: 5px;
-                background-color: $background-mobile-color;
-                margin-bottom: 15px;
-                padding: 0 10px;
-                width: 100%;
-                box-sizing: border-box;
-                font-size: 16px;
-
-            }
-
-            &.error {
-                input {
-                    border: 2px solid $error-color;
-                    margin: 0;
-                }
-
-                .error-msg-container {
-                    display: flex;
-                    padding-bottom: 10px;
-
-                    img {
-                        width: 32px;
-                        height: auto;
-                        padding: 2px;
-                    }
-
-                    p {
-                        font-size: 12px;
-                        line-height: 20px;
-                        margin: 0;
-                        color: $error-color;
-                    }
-                }
-            }
-        }
-
-        .input-span {
-            position: absolute;
-            top: 0;
-            z-index: 1;
-            width: 100%;
-            padding: 0 0.8rem;
-            margin-top: 5px;
-            overflow: hidden;
-            font-size: 11px;
-            color: var(--blue);
-            opacity: 0;
-            transition: all 200ms ease-out;
-            transform: translateY(0.4rem);
-            pointer-events: none;
-            user-select: none;
-        }
-
-        .input-field {
-            display: block;
-            width: 100%;
-            // box-shadow: 0 0 0 1px #d9d9d9;
-            appearance: none;
-            transition: all 200ms ease-out;
-
-            &:focus {
-                box-shadow: 0 0 0 2px var(--blue); //#2a9dcc;
-                outline: 0;
-            }
-        }
-
-        input::-ms-reveal,
-        input::-ms-clear {
-            display: none;
-        }
-
     }
 
 }
+
+
+.input-wrapper {
+    width: 100%;
+
+    .input-label {
+        position: relative;
+        display: block;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 10px;
+
+        &.has-input {
+            .input-span {
+                opacity: 1;
+                transform: none;
+            }
+
+            .input-field {
+                padding: 1.4rem 0.8rem 10px;
+            }
+        }
+    }
+
+    input {
+        height: 49px;
+        border: 2px solid $form-border-color;
+        border-radius: 5px;
+        background-color: $background-mobile-color;
+        margin-bottom: 15px;
+        padding: 0 10px;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+
+    }
+
+    &.error {
+        input {
+            border: 2px solid $error-color;
+            margin: 0;
+        }
+
+        .error-msg-container {
+            display: flex;
+            padding-bottom: 10px;
+
+            img {
+                width: 32px;
+                height: auto;
+                padding: 2px;
+            }
+
+            p {
+                font-size: 12px;
+                line-height: 20px;
+                margin: 0;
+                color: $error-color;
+            }
+        }
+    }
+}
+
+.input-span {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 0 0.8rem;
+    margin-top: 5px;
+    overflow: hidden;
+    font-size: 11px;
+    color: var(--blue);
+    opacity: 0;
+    transition: all 200ms ease-out;
+    transform: translateY(0.4rem);
+    pointer-events: none;
+    user-select: none;
+}
+
+.input-field {
+    display: block;
+    width: 100%;
+    // box-shadow: 0 0 0 1px #d9d9d9;
+    appearance: none;
+    transition: all 200ms ease-out;
+
+    &:focus {
+        box-shadow: 0 0 0 2px var(--blue); //#2a9dcc;
+        outline: 0;
+    }
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}
+
+
 
 .password-container {
     width: 100%;

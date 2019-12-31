@@ -1,15 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Templates modulari</title>
 </head>
-<body>
-    hello world
 
-    <script src="js/index.js"></script>
+<body>
+    <!-- div wrapper generico, la classe corretta per mobile è --is-mobile-- -->
+    <div class="!is-mobile">
+
+        <!-- header pubblico -->
+        <div class="public-head-container">
+            <div class="logo-content desktop-only">
+                <img src="../../static/assets/pitagora-spa-finanziamenti-cessione-quinto-dello-stipendio@2x.png">
+            </div>
+            <div class="legal-info-content mobile-only">
+                <p>Note Legali</p>
+                <img src="../../static/assets/placeholders/note-icon.png">
+            </div>
+        </div>
+        <!-- fine header pubblico -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- header privato -->
+        <div class="private-head-container">
+            <div class="logo-content desktop-only">
+                <img src="../../static/assets/pitagora-spa-finanziamenti-cessione-quinto-dello-stipendio@2x.png">
+            </div>
+            <div class="head-title mobile-only">
+                <p>La mia situazione</p>
+            </div>
+            <div class="icons-container row">
+                <div>
+                    <img class="icon" id="bell" src="../../static/assets/Notification.svg">
+                </div>
+                <div>
+                    <img class="icon" id="user" src="../../static/assets/Profile.svg">
+                </div>
+            </div>
+            <div class="user-info-container desktop-only">
+                <p><strong>Benvenuto,</strong><br> Mario Rossi</p>
+            </div>
+        </div>
+        <!--fine header privato -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!--inizio login form component-->
+        <div class="login-form-container desktop-only">
+            <div class="login-form-content flex-column">
+                <div class="login-form-content-wrapper">
+                    <div class="login-header">
+                        <p>Login</p>
+                        <h3 class="main-title">Effettua l'accesso all'area personale</h3>
+                    </div>
+                    <div class="form-container">
+                        <form>
+
+                            <div class="input-form-wrapper">
+                                <div class="input-container">
+                                    <div class="input-fields flex-column">
+
+                                        <!-- inizio input component -->
+                                        <!-- inserire a input-wrapper la class --error-- per messaggi errore-->
+                                        <div class="input-wrapper">
+                                            <!-- inserire la classe -- has-input -- a input-label   per alzare lo span -->
+                                            <label class="input-label">
+                                                <span class="input-span">Username</span>
+                                                <input class="input-field" type="text" id="username" name="username"
+                                                    placeholder="Username" />
+                                            </label>
+                                            <span class="error-msg-container row-start">
+                                                <img src="../../static/assets/placeholders/error-icon.png">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </span>
+                                        </div>
+                                        <!-- fine input component -->
+
+                                        <!-- inizio password input component -->
+                                        <div class="password-container input-wrapper">
+                                            <label class="input-label">
+                                                <span class="input-span">Password</span>
+                                                <input class="input-field" type="password" id="password" name="password"
+                                                    placeholder="Password" />
+                                                <div class="password-eye button active">
+                                                    <!-- cambiare l'asset con quello più scuro, ho applicato l'opacity se non selezionato -->
+                                                    <img src="../../static/assets/placeholders/password-eye-icon.png">
+                                                </div>
+                                            </label>
+                                            <span class="error-msg-container row-start">
+                                                <img src="../../static/assets/placeholders/error-icon.png">
+
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </span>
+                                        </div>
+                                        <!-- fine password input container -->
+
+                                        <!-- aggiungere la classe --active-- se bottone premuto -->
+                                    </div>
+                                    <div class="error-msg-container row-start">
+                                        <img src="../../static/assets/placeholders/error-icon.png">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="utilities-login">
+                                    <div class="remember-login-wrapper">
+                                        <div class="row">
+                                            <input id="remember-login" type="checkbox" />
+                                            <label class="checkbox-cover" for="remember-login"></label>
+                                            <label for="remember-login">Resta collegato</label>
+                                        </div>
+                                    </div>
+                                    <a id="access-problem" href="something">Problemi d'accesso?</a>
+                                </div>
+                            </div>
+                            <div class="request-container">
+                                <button type="submit" id="sendRequest" class="button-request">
+                                    <p>ACCEDI ALL'AREA PERSONALE</p>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="registration-container">
+                            <p>
+                                Non hai l'account?
+                                <a id="registration-link" class="link" href="something">Registrati</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--fine login form component-->
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        
+        <!--inizio side element con immagine component 
+        ---questo componente necessita di un wrapper come da pagina Dashboard-Login (main container) che contenga anche 
+        il login form component-->
+        <div class="side-element-container desktop-only">
+            <div class="side-element-content">
+                <img src="../../static/assets/img1.png" />
+                <h3>Vantaggio uno lorem</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+        <!--fine side element con immagine component-->
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <!-- per utilizzare i componenti input si necessita di un wrapper che gli dia una dimensione, 
+            di default sono width 100% -->
+            
+        <!-- inizio input generico component -->
+        <!-- inserire a input-wrapper la class --error-- per messaggi errore-->
+        <div class="input-wrapper">
+            <!-- inserire la classe -- has-input -- a input-label   per alzare lo span -->
+            <label class="input-label">
+                <span class="input-span">Username</span>
+                <input class="input-field" type="text" id="username" name="username" placeholder="Username" />
+            </label>
+            <span class="error-msg-container row-start">
+                <img src="../../static/assets/placeholders/error-icon.png">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </span>
+        </div>
+        <!-- fine input generico component -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- inizio password input component -->
+        <div class="password-container input-wrapper">
+            <label class="input-label">
+                <span class="input-span">Password</span>
+                <input class="input-field" type="password" id="password" name="password" placeholder="Password" />
+                <div class="password-eye button active">
+                    <!-- cambiare l'asset con quello più scuro, ho applicato l'opacity se non selezionato -->
+                    <img src="../../static/assets/placeholders/password-eye-icon.png">
+                </div>
+            </label>
+            <span class="error-msg-container row-start">
+                <img src="../../static/assets/placeholders/error-icon.png">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </span>
+        </div>
+        <!-- fine password input container -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+    </div>
 </body>
+
 </html>

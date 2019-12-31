@@ -8,13 +8,13 @@ html {
 			background-color: $text-secondary-color;
 			height: 100%;
 
-			.head-container {
-				display: flex;
-				flex: 1;
-				width: 100%;
-				justify-items: start;
-				align-items: center;
-			}
+			// .head-container {
+			// 	display: flex;
+			// 	flex: 1;
+			// 	width: 100%;
+			// 	justify-items: start;
+			// 	align-items: center;
+			// }
 
 			.main-container {
 				display: flex;
@@ -44,12 +44,12 @@ html {
 					display: none !important;
 				}
 
-				.head-container {
-					display: flex;
-					justify-content: flex-end;
-					width: 100%;
-					flex: 1;
-				}
+				// .head-container {
+				// 	display: flex;
+				// 	justify-content: flex-end;
+				// 	width: 100%;
+				// 	flex: 1;
+				// }
 
 				.main-container {
 					flex-direction: column;
@@ -106,7 +106,7 @@ html {
 
 
 
-	@import 'components/Head/head.scss';
+	@import 'components/Head/public-header.scss';
 	@import 'components/Login-Image-Component/side-element.scss';
 	@import 'components/Login-Form/login-form.scss';
 	@import 'components/Slider/slider.scss';
