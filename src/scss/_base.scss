@@ -1,7 +1,7 @@
 body,
 html {
 	margin: 0;
-	font-family: Roboto;
+	font-family: Roboto, 'sans-serif';
 	//font-size: 14px;
 	background-color: $text-secondary-color;
 }
@@ -21,7 +21,7 @@ html {
 .main-title {
 	font-size: 30px;
 	line-height: 39px;
-	font-family: Roboto-Bold;
+	font-family: Roboto-Bold, 'sans-serif';
 	color: $accent-color;
 }
 
@@ -32,6 +32,7 @@ html {
 
 .button {
 	cursor: pointer;
+
 }
 
 
@@ -46,7 +47,7 @@ html {
 	font-size: 14px;
 
 	@media screen and (max-width: 912px) {
-		min-width: 300px;
+		min-width: 250px;
 		max-height: 48px;
 	}
 
@@ -88,11 +89,21 @@ html {
 	box-shadow: 0 4px 12px 6px rgba(0, 0, 0, 0.06);
 }
 
+.card-cta {
+	border-radius: 8px;
+	background-color: $background-mobile-color;
+	box-shadow: 0 4px 12px 6px rgba(0, 0, 0, 0.06);
+}
+
 .link{
-	font-family: roboto-bold;
+	font-family: roboto-bold, 'sans-serif';
+	&:visited {
+		color: $accent-color;
+	}
 
 }
 
 @import '../pages/Dashboard-Login/index.scss';
 @import '../pages/Dashboard-Draft-Alarm/index.scss';
 @import '../pages/Login-mobile/index.scss';
+@import '../pages/Documenti-Legali/documenti-legali.scss';

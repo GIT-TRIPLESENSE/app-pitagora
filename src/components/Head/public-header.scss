@@ -1,7 +1,7 @@
+
 .public-head-container {
     position: relative;
     display: flex;
-    flex: 1;
     width: 100%;
     justify-items: start;
     align-items: center;
@@ -82,12 +82,15 @@
     }
 }
 
+
+
 .is-mobile {
     .public-head-container {
         display: flex;
         justify-content: flex-end;
         width: 100%;
-        flex: 1;
+        background-color: #FFF;
+
     }
     .mobile-only {
         display: flex !important;
@@ -96,4 +99,12 @@
     .desktop-only {
         display: none !important;
     }
+}
+
+
+
+
+
+.hidden {
+    display: none;
 }

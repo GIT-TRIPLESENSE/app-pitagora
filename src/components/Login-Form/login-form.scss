@@ -1,156 +1,256 @@
-.login-form-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+// ACCESSO CLASSICO --- MOBILE
+.is-mobile {
+
+
+  .login-mobile-page {
+    background-color: $background-mobile-color;
+    height: 100%;
 
     .login-form-content {
-        // min-height: 500px;
-        border-radius: 8px;
-        background-color: #fff;
-        box-shadow: 0 4px 12px 6px rgba(0, 0, 0, .06);
-
-        @media screen and (min-width: 912px) {
-            min-width: 400px;
-            max-width: 400px;
-        }
-
-
-        .login-form-content-wrapper {
-            height: 100%;
-            width: 100%;
-            padding: 24px;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-
-        }
-    }
-
-    .registration-container {
-        color: $accent-color;
-        opacity: 0.9;
-        padding-top: 10px;
-
-        a:link {
-            color: $accent-color;
-        }
-    }
-}
-
-@media (max-width:912px) and (min-width:450px) {
-    .button-request {
-        max-width: 300px;
-    }
-}
-
-@media screen and (max-width: 912px) {
-    .login-form-content {
-        position: absolute;
-        top: 0;
+      @media screen and (max-width: 450px) {
+        position: fixed;
+        top: 40px;
         bottom: 0;
         left: 0;
         right: 0;
-        min-width: 100%;
+        overflow: hidden;
+        box-shadow: none;
+      }
     }
 
     .login-form-content-wrapper {
-        height: 100%;
+      height: 100%;
+    }
+
+    .login-header {
+      p {
+        opacity: 1;
+        color: $accent-color;
+        font-size: 16px;
+        line-height: 21px;
+        margin-top: 0;
+      }
+
+      .main-title {
+        width: 100%;
+        font-size: 30px;
+        line-height: 39px;
+      }
+    }
+
+    .normal_login {
+      display: none;
+    }
+
+    .from_classic-access {
+      display: flex;
+    }
+
+    .remember-login-wrapper {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    .utilities-login {
+      justify-content: flex-start;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      div {
+        padding: 5px 3px;
+      }
+
+      a {
+        color: $accent-color;
+        padding: 3px;
+        padding: 5px 3px;
+      }
+    }
+
+    .access-problem-container {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
     }
 
     .request-container {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
     }
+  }
 }
 
 
+// DEFAULT LOGIN FORM --- DESKTOP
+.from_classic-access {
+  display: none;
+}
+
+.login-form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .login-form-content {
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px 6px rgba(0, 0, 0, .06);
+
+
+    @media screen and (max-width: 450px) {
+      position: sticky;
+      top: 40px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      box-shadow: none;
+      height: 100%;
+    }
+
+    @media screen and (min-width: 912px) {
+      min-width: 400px;
+      max-width: 400px;
+      
+    }
+
+
+    .login-form-content-wrapper {
+      width: 100%;
+      padding: 24px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+
+    }
+  }
+
+  .registration-container {
+    color: $accent-color;
+    opacity: 0.9;
+    padding-top: 10px;
+
+    a:link {
+      color: $accent-color;
+    }
+  }
+}
+
+.login-header {
+  p {
+    margin: 0;
+    opacity: 0.6;
+    color: $accent-color;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  h3 {
+    width: 65%;
+    font-size: 24px;
+    line-height: 32px;
+
+    @media screen and (max-width: 320px) {
+      width: 100%;
+    }
+  }
+}
+
+
+
+.dashboard-login.homepage {
+  @media (max-width:912px) and (min-width:450px) {
+    .button-request {
+      max-width: 300px;
+    }
+  }
+
+  @media screen and (max-width: 912px) {
+    .login-form-container {
+      position: fixed;
+      top: 35px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      min-width: 100%;
+      //min-height: 100%;
+      overflow-y: hidden;
+      overflow-x: hidden;
+    }
+
+    .login-form-content-wrapper {
+      height: 100%;
+      // width: 100vh;
+    }
+
+    .request-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+  }
+}
+
+
+
+
+
+
 .form-container {
-    flex: 4;
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+
+  form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80%;
-    padding-bottom: 20px;
-    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
 
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        justify-content: space-between;
-
-        .input-form-wrapper {
-            width: 100%;
-        }
-        .request-container {
-            width: 80%;
-            display: flex;
-            align-items: flex-end;
-            padding-top: 50px;
-        }
+    .input-form-wrapper {
+      width: 100%;
     }
+
+    .request-container {
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      padding-top: 50px;
+    }
+  }
 }
 
 
 
 .utilities-login {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    // flex: 2;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  // flex: 2;
+  align-items: center;
 
-    input[type=checkbox] {
-        // da guardare per modificare lo style!!  
-        position: absolute;
-        opacity: 0;
+  a {
+    color: $accent-color;
+    padding: 3px;
+    padding: 5px 3px;
+  }
 
-        &+label {
-            position: relative;
-            cursor: pointer;
-            padding: 0;
-        }
 
-        &+label::before {
-            content: '';
-            margin-right: 10px;
-            display: inline-block;
-            vertical-align: text-top;
-            background-color: $background-mobile-color;
-            width: 20px;
-            height: 20px;
-            border: 2px solid $form-border-color;
-            border-radius: 2px;
-
-        }
-
-        // Box focus
-        &:focus+label:before {
-            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
-        }
-
-        // Checkmark
-        &:checked+label:after {
-            content: "";
-            position: absolute;
-            left: 7px;
-            top: 1px;
-            width: 9px;
-            height: 15px;
-            border-right: 2px solid $form-border-color;
-            border-bottom: 2px solid $form-border-color;
-            transform: rotate(45deg);
-        }
-    }
-
-    a {
-        color: $accent-color;
-        padding: 3px;
-        padding: 5px 3px;
-    }
+  .normal_login {
+    display: block;
+  }
 
 }

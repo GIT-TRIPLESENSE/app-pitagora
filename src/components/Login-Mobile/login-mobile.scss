@@ -8,7 +8,7 @@
     .digit-container {
 
         #touchId {
-            background: url(../../static/assets/placeholders/fingerprint.png);
+            background: url(/assets/placeholders/fingerprint.png);
             height: 40px;
             width: 36px;
         }
@@ -34,6 +34,9 @@
             font-weight: bold;
             line-height: 24px;
             text-align: center;
+            background-color: transparent;
+            border: none;
+
         }
 
     }
