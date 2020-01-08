@@ -100,7 +100,13 @@ html {
 	&:visited {
 		color: $accent-color;
 	}
+}
 
+.description {
+	opacity: 0.8;	
+	color: $text-color;		
+	font-size: 16px;
+	font-family: Roboto;	
 }
 
 @import '../pages/Dashboard-Login/index.scss';
