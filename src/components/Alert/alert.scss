@@ -1,0 +1,36 @@
+.alert {
+    border-radius: 30px;
+    background-color: #FBFBFB;
+    box-shadow: 0 5px 20px -8px rgba(0, 0, 0, 0.5);
+    color: #313131;
+    font-family: Roboto-Bold;
+    box-sizing: border-box;
+    padding-top: 38px;
+    position: relative;
+    text-align: center;
+
+    &__img {
+        position: absolute;
+        background-color: #fbfbfb;
+        top: -50px;
+        padding: 10px;
+        border-radius: 100%;
+    }
+
+    &__title {
+        p {
+            opacity: 0.8;
+            font-size: 22px;
+            line-height: 22px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__text {
+        p {
+            opacity: 0.8;
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+}
