@@ -1,0 +1,56 @@
+.message__box {
+    position: absolute;
+    //valutare le distanze e dimensioni !!!ß
+    right: 16px;
+    top: 80px;
+}
+
+.message {
+    //valutare le distanze e dimensioni !!!
+    height: 15vh;
+    width: 30vw;
+    border-radius: 4px;
+    background-color: $background-mobile-color;
+    box-shadow: 0 4px 12px 6px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+    padding: 16px;
+    margin-bottom: 15px;
+
+    &__body {
+        width: 100%;
+
+        &__icon {
+
+            &--check {
+                width: 33px;
+                height: 29px;
+                background-image: url(../../static/assets/check.svg);
+                margin-right: 16px
+            }
+
+            &--error {
+                width: 33px;
+                height: 29px;
+                background-image: url(../../static/assets/error.svg);
+                margin-right: 16px
+            }
+
+            &--flag {
+                width: 33px;
+                height: 29px;
+                background-image: url(../../static/assets/flag.svg);
+                margin-right: 16px
+            }
+        }
+
+        &__text-container {
+            align-items: flex-start;
+            justify-content: center;
+
+            p {
+                &.bold {}
+
+            }
+        }
+    }
+}

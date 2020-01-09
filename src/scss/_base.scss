@@ -156,3 +156,7 @@ html {
 @import '../pages/Login-mobile/index.scss';
 @import '../pages/Documenti-Legali/documenti-legali.scss';
 @import '../pages/Modal/modal-sample.scss';
+
+// components (non hanno una loro pagina html)
+@import '../components/Select/select.scss';
+@import '../components/Message-Modal/message-modal.scss';
