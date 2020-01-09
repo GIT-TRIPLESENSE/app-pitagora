@@ -1,5 +1,6 @@
 // card singola-CTA
 .single-card-container {
+    position: relative;
     width: 100%;
     .card-title-container {
         p {
@@ -13,6 +14,7 @@
 }
 // card singola con immagine-CTA
 .single-card-miniature-container {
+    position: relative;
     width: 100%;
     margin-bottom: 16px;
     
@@ -35,6 +37,41 @@
 
 }
 
+.single-card-icon-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+    height: 64px;
+
+    &__body {
+        width: 100%;
+        .card-icon-container {
+            img {
+                position: relative;
+                top: 4px;
+                left: 16px;
+                height: 40px;
+                width: 40px;
+    
+            }
+        }
+    
+        .card-content {
+            padding: 0 16px;
+            padding-left: 24px;
+        }
+    
+        .card-title-container{
+            p {
+                color: #002855;		
+                font-size: 14px;	
+                line-height: 24px;
+                margin: 0;
+            }
+        }
+    }
+}
+
 
 //commons
 .card-content {
@@ -50,4 +87,31 @@
     height: 1px;
     width: 100%;
     border: 1px solid #D7D7D7;
+}
+
+
+
+//BADGE ICON
+
+.badge {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    bottom: 6px;
+    opacity: 1;
+    left: -12px;
+    img {
+        position: relative;
+    }
+}
+
+
+.is-done {
+    .single-card-icon-container__body {
+        opacity: 0.5;
+
+    }
+    .badge {
+        display: block;
+    }
 }

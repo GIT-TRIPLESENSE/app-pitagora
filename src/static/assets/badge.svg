@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 61.2 (101010) - https://sketch.com -->
+    <title>FF7C3929-A524-462C-9A61-E3254D4293DC</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M12,0 C5.35180055,0 0,5.3915276 0,12 C0,18.6068509 5.3915276,24 12,24 C18.6068509,24 24,18.6084724 24,12 C24,5.39314911 18.6486048,0 12,0 Z" id="path-1"></path>
+        <filter x="-120.8%" y="-104.2%" width="341.7%" height="341.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="3" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="4" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.08 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Mobile-app" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Richieste-2.7" transform="translate(-14.000000, -180.000000)">
+            <g id="check" transform="translate(32.000000, 194.000000)">
+                <g id="Path">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#59DD92" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="9.68983177 17.918519 9.56869266 17.9997527 4.6632133 13.0545463 6.97338153 10.7842673 9.60850078 13.4592757 17.0265131 6.04126343 19.3366813 8.35143166"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

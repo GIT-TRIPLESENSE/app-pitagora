@@ -109,6 +109,12 @@ html {
 	font-family: Roboto;	
 }
 
+.date {
+	color: #072952;		
+	font-size: 12px;	
+	line-height: 16px;
+}
+
 // button chiusura modali
 .close {
 
@@ -142,9 +148,6 @@ html {
 	font-family: Roboto;
 }
 
-.to-bottom {
-	align-self: flex-end;
-}
 
 
 @import '../pages/Dashboard-Login/index.scss';

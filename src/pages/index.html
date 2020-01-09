@@ -335,8 +335,10 @@
             <p class="description">Desideri essere contattato dall’assistenza clienti?</p>
             <!-- switch component -->
             <label class="btnSwitch">
-                    <input type="checkbox" checked>
-                    <span class="btnSwitch__slider"></span>
+                <input type="checkbox" checked>
+                <span class="btnSwitch__slider"></span>
+                <span class="on bold">SI</span>
+                <span class="off bold">NO</span>
             </label>
             <!--fine switch component -->
         </div>
@@ -346,11 +348,152 @@
         <br>
         <br>
 
+        <!-- inizio componente box-highlight con sfondo blu -->
+        <div class="box-highlight flex-column">
+            <div class="box-highlight__content row">
+                <p class="bold">+39 3496743764</p>
+            </div>
+        </div>
+        <!-- fine componente box-highlight con sfondo blu -->
+        <br>
+        <br>
+        <!-- inizio componente box-highlight con sfondo blu per "inserisci documento" -->
+        <label for="hbox-prova" class="box-highlight flex-column is-input">
+            <input id="hbox-prova" type="file">
+            <div class="box-highlight__content row">
+                <p class="bold">Inserisci un documento</p>
+                <img src="../static/assets/search.svg">
+            </div>
+        </label>
+        <!-- fine componente box-highlight con sfondo blu per "inserisci documento" -->
+        <br>
+        <!-- inizio componente box-highlight con sfondo blu per "inserisci documento" CON DOCUMENTO-->
+        <label for="hbox-prova" class="box-highlight flex-column is-input has-document">
+            <input id="hbox-prova" type="file">
+            <div class="box-highlight__content row">
+                <!-- da inserire qui il name del doc dall'input value -->
+                <p class="bold">LoremIpsumDoc.pdf</p>
+                <img src="../static/assets/search.svg">
+            </div>
+        </label>
+        <!-- fine componente box-highlight con sfondo blu per "inserisci documento" -->
 
         <br>
         <br>
         <br>
         <br>
+
+
+        <!-- inizio componente single-card con icona -->
+        <!-- inserire la classe --has-badge-- se documento è presente -->
+        <div class="single-card-icon-container card-cta row is-done">
+            <div class="badge">
+                <img src="../static/assets/badge.svg">
+            </div>
+            <div class="single-card-icon-container__body row">
+                <div class="card-icon-container row">
+                    <img src="../static/assets/azienda-datoriale-icon.png">
+                </div>
+                <div class="card-content row">
+                    <div class="card-title-container">
+                        <p class="card-title bold">Dichiarazione azienda datoriale</p>
+                    </div>
+                    <div class="icon-container button">
+                        <img src="../../static/assets/right.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fine componente single-card con icona -->
+
+        <div class="single-card-icon-container card-cta row">
+            <div class="badge">
+                <img src="../static/assets/badge.svg">
+            </div>
+            <div class="single-card-icon-container__body row">
+                <div class="card-icon-container row">
+                    <img src="../static/assets/azienda-datoriale-icon.png">
+                </div>
+                <div class="card-content row">
+                    <div class="card-title-container">
+                        <p class="card-title bold">Busta paga</p>
+                    </div>
+                    <div class="icon-container button">
+                        <img src="../../static/assets/right.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="single-card-icon-container card-cta row">
+            <div class="badge">
+                <img src="../static/assets/badge.svg">
+            </div>
+            <div class="single-card-icon-container__body row">
+                <div class="card-icon-container row">
+                    <img src="../static/assets/azienda-datoriale-icon.png">
+                </div>
+                <div class="card-content row">
+                    <div class="card-title-container">
+                        <p class="card-title bold">Dichiarazione ASL</p>
+                    </div>
+                    <div class="icon-container button">
+                        <img src="../../static/assets/right.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="info-card card-cta flex-column is-last">
+
+            <div class="info-card__title row-start">
+                <h3 class="title">Richiesta</h3>
+                <div class="date-container">
+                    <p class="date bold">22/11/2018</p>
+                </div>
+            </div>
+            <div class="info-card-body row">
+                <div class="info-card__body__info-area">
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam…</p>
+                </div>
+            </div>
+            <div class="info-card__icon-container button">
+                <img src="../../static/assets/right.svg">
+            </div>
+
+        </div>
+
+        <div class="info-card card-cta flex-column">
+
+            <div class="info-card__title row-start">
+                <h3 class="title">Richiesta lorem ipsum </h3>
+                <div class="date-container">
+                    <p class="date bold">22/11/2018</p>
+                </div>
+            </div>
+            <div class="info-card-body row">
+                <div class="info-card__body__info-area">
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam…</p>
+                </div>
+            </div>
+            <div class="info-card__icon-container button">
+                <img src="../../static/assets/right.svg">
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
 
 
     </div>
