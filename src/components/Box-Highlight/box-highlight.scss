@@ -1,0 +1,15 @@
+.box-highlight {
+    height: 80px;
+    width: 100%;
+    border-radius: 8px;	
+    background-color: $box-highlight-color;	
+    box-shadow: 0 2px 8px 0 rgba(233,239,253,0.1);
+    justify-content: center;
+
+    &__content {
+        opacity: 0.8;	
+        color: $text-color;		
+        font-size: 22px;	
+        line-height: 32px;
+    }
+}

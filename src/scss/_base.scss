@@ -109,8 +109,46 @@ html {
 	font-family: Roboto;	
 }
 
+// button chiusura modali
+.close {
+
+	&:focus {
+		text-decoration: none;
+	}
+
+	&:before {
+		content: '';
+		border: 1px solid black;
+		width: 20px;
+		transform: rotate(135deg);
+		position: absolute;
+		right: 0px;
+	}
+
+	&:after {
+		content: ''; // here is your X(cross) sign.
+		border: 1px solid black;
+		width: 20px;
+		transform: rotate(45deg);
+		position: absolute;
+		right: 0px;
+	}
+}
+
+.bold {
+	font-family: Roboto-Bold;
+}
+.regular {
+	font-family: Roboto;
+}
+
+.to-bottom {
+	align-self: flex-end;
+}
+
+
 @import '../pages/Dashboard-Login/index.scss';
 @import '../pages/Dashboard-Draft-Alarm/index.scss';
 @import '../pages/Login-mobile/index.scss';
 @import '../pages/Documenti-Legali/documenti-legali.scss';
-@import '../pages/Modal-Registrazione/help-registrazione.scss';
+@import '../pages/Modal/modal-sample.scss';
