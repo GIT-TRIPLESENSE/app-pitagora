@@ -1,6 +1,5 @@
 .message__box {
     position: fixed;
-    //valutare le distanze e dimensioni !!!ß
     right: 16px;
     top: 80px;
 }
@@ -59,6 +58,21 @@
 
     &.yellow {
         border-left: 4px solid #F4B200;
+    }
+
+}
+
+
+.is-mobile {
+    .message {
+        height: 11vh;
+        min-height: 11vh;
+        min-width: 70vw;
+        &__body__icon {
+            img {
+                width: 30px;
+            }
+        }
     }
 
 }
