@@ -91,6 +91,9 @@
 }
 
 .is-mobile {
+
+    max-width: 375px;
+
     .mobile-only {
         display: flex !important;
     }

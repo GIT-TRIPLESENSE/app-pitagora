@@ -1,4 +1,4 @@
-.alert {
+.alert:not(.pratica-main) {
     border-radius: 30px;
     background-color: #FBFBFB;
     box-shadow: 0 5px 20px -8px rgba(0, 0, 0, 0.5);

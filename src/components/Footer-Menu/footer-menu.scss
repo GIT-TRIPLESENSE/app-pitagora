@@ -4,6 +4,8 @@
     box-sizing: border-box;
     padding: 10px;
     box-shadow: 0 4px 12px 6px rgba(0,0,0,.06);
+    position: fixed;
+    bottom: 0;
 
     .menu-btn.active{
         color: #007AFF;

@@ -1,25 +1,13 @@
-.page-container {
+.dashboard-alarm {
 
-	&.dashboard-alarm {
-
-		height: 100%;
 		background-color: $text-secondary-color;
 
-		// .head-container {
-		// 	display: flex;
-		// 	width: 100%;
-		// 	justify-items: start;
-		// 	align-items: center;
-		// 	background-color: $background-mobile-color;
-		// 	box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
-		// }
-
 		.main-container {
-			display: flex;
-			width: 100%;
-			flex: 1;
+
+			display: block;
+ 
 			.main {
-				flex: 7;
+				flex: 5;
 				align-items: flex-start;
 				padding: 10px;
 				padding-left: 0;
@@ -72,10 +60,7 @@
 			// }
 
 			.main-container {
-				flex-direction: column;
-				align-items: center;
-				justify-content: space-evenly;
-				flex: 10;
+
 				
 				.main {
 					width: 100%;
@@ -115,19 +100,15 @@
 		#right-arrow {
 			padding: 5px;
 		}
-	}
-
-	&.is-mobile {
-		.pratica-container{
-			align-items: center;
+		&.is-mobile {
+			.pratica-container{
+				align-items: center;
+			}
 		}
-	}
-
 }
 
 
 // components
-
 @import '../../components/Head/private-header.scss';
 @import '../../components/Side-Menu_Draft-Alarm/side-menu.scss';
 @import '../../components/Info-Pratica/info-pratica.scss';
