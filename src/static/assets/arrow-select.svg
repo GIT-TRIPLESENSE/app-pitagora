@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="20px" viewBox="0 0 32 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 61.2 (101010) - https://sketch.com -->
+    <title>BBA9F2E4-2BCF-4EC1-8850-296AB05BAB18svg/</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="-4 2.19999981 12 21.3999998 28 2.19999981"></polygon>
+    </defs>
+    <g id="Mobile-app" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Richieste-2.2-Opened" transform="translate(-307.000000, -245.000000)">
+            <g id="Group" transform="translate(24.000000, 193.000000)">
+                <g id="Component/Form/empty-Copy-Component/Form/drop-opened" transform="translate(0.000000, 37.000000)">
+                    <g id="Icons/Utility/dropdown-down-Icons/Utility/dropdown-up" transform="translate(287.000000, 13.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Combined-Shape" fill="#002956" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

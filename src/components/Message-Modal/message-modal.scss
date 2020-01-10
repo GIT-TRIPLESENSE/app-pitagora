@@ -1,5 +1,5 @@
 .message__box {
-    position: absolute;
+    position: fixed;
     //valutare le distanze e dimensioni !!!ß
     right: 16px;
     top: 80px;
@@ -20,26 +20,11 @@
         width: 100%;
 
         &__icon {
+            margin-right: 16px;
 
-            &--check {
-                width: 33px;
-                height: 29px;
-                background-image: url(../../static/assets/check.svg);
-                margin-right: 16px
-            }
-
-            &--error {
-                width: 33px;
-                height: 29px;
-                background-image: url(../../static/assets/error.svg);
-                margin-right: 16px
-            }
-
-            &--flag {
-                width: 33px;
-                height: 29px;
-                background-image: url(../../static/assets/flag.svg);
-                margin-right: 16px
+            img {
+                width: 40px;
+                height: auto;
             }
         }
 
@@ -48,9 +33,32 @@
             justify-content: center;
 
             p {
-                &.bold {}
+                margin: 0;
+                &.description {
+                    color: #A1A1A5;		
+                    font-size: 14px;	
+                    line-height: 19px;
+                }
 
             }
         }
+
+        .close:after, .close:before {
+            right: 28px;
+            border: 1px solid #D7D7D7;
+        }
     }
+
+    &.green {
+        border-left: 4px solid #88BD87;
+    }
+
+    &.red {
+        border-left: 4px solid #E30322;
+    }
+
+    &.yellow {
+        border-left: 4px solid #F4B200;
+    }
+
 }

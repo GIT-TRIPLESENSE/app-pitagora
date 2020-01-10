@@ -495,51 +495,64 @@
         <br>
 
         <!-- inizio Select component -->
-
-        <!-- <div class="custom-select" style="width:200px;">
-            <select>
-                <option value="0">Prima</option>
-                <option value="1">Seconda</option>
-                <option value="2">Terza</option>
-                <option value="3">Quarta</option>
-            </select>
-        </div> -->
+        <div class="custom-select-container closed">
+            <div class="custom-select row">
+                <div class="selected description bold">Selezionata</div>
+                <div class="arrow-container row">
+                    <!-- da ruotare al click su custom-select-container  -->
+                    <img src="../static/assets/arrow-select.svg">
+                </div>
+            </div>
+            <div class="option-container">
+                <!-- aggiungere la classe --selected-- se selezionata -->
+                <div class="option description selected row" value="0">Prima</div>
+                <div class="option description row" value="1">Seconda</div>
+                <div class="option description row" value="2">Terza</div>
+                <div class="option description row" value="3">Quarta</div>
+            </div>
+        </div>
 
         <!-- fine Select component -->
 
         <!-- box che contiene gli eventuali messaggi modali --IMPORTANTE-- se presente anche solo un componente deve essere inserito a questo box: -->
         <div class="message__box">
             <!--inizio messaggio modale componente -->
-            <div class="message row-start">
+            <div class="message green row-start">
                 <div class="message__body row-start">
-                    <div class="message__body__icon--check">
+                    <div class="message__body__icon">
+                        <img src="../../static/assets/check.svg">
                     </div>
                     <div class="message__body__text-container flex-column">
                         <p class="bold">Lorem ipsum!</p>
-                        <p>Lorem ipsum!</p>
+                        <p class="description">Lorem ipsum!</p>
                     </div>
+                    <div class="close"></div>
                 </div>
             </div>
             <!--fine messaggio modale componente -->
-            <div class="message row-start">
+            <div class="message red row-start">
                 <div class="message__body row-start">
-                    <div class="message__body__icon--error">
+                    <div class="message__body__icon">
+                        <img src="../../static/assets/error.svg">
                     </div>
                     <div class="message__body__text-container flex-column">
                         <p class="bold">Lorem ipsum!</p>
-                        <p>Lorem ipsum!</p>
+                        <p class="description">Lorem ipsum!</p>
                     </div>
+                    <div class="close"></div>
                 </div>
             </div>
 
-            <div class="message row-start">
+            <div class="message yellow row-start">
                 <div class="message__body row-start">
-                    <div class="message__body__icon--flag">
+                    <div class="message__body__icon">
+                        <img src="../../static/assets/flag.svg">
                     </div>
                     <div class="message__body__text-container flex-column">
                         <p class="bold">Lorem ipsum!</p>
-                        <p>Lorem ipsum!</p>
+                        <p class="description">Lorem ipsum!</p>
                     </div>
+                    <div class="close"></div>
                 </div>
             </div>
         </div>

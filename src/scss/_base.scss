@@ -53,7 +53,7 @@ html {
 	}
 
 
-	&.disabled {
+	&:disabled {
 		background: #8BA7C6;
 	}
 }
