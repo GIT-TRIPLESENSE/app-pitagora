@@ -198,6 +198,7 @@
         position: relative;
         cursor: pointer;
         padding: 0;
+        padding: 3px 0;
       }
   
       &+label::before {
@@ -210,6 +211,7 @@
         height: 20px;
         border: 2px solid $form-border-color;
         border-radius: 100%;
+
   
       }
   
@@ -223,10 +225,29 @@
         content: "";
         position: absolute;
         left: 5px;
-        top: 5px;
+        top: 8px;
         width: 14px;
         height: 14px;
         background-color: #0063CC;
         border-radius: 100%;
+      }
+    }
+
+    .is-mobile {
+      input[type=radio] {
+        // da guardare per modificare lo style!!  
+        
+        &+label::before {
+          width: 13px;
+          height: 13px;
+        }
+
+        // Checkmark
+        &:checked+label:after {
+          left: 4px;
+          top: 7px;
+          width: 9px;
+          height: 9px;
+        }
       }
     }
