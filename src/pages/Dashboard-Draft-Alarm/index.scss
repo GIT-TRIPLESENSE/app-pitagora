@@ -7,10 +7,9 @@
 			display: block;
  
 			.main {
-				flex: 5;
+				// flex: 5;
 				align-items: flex-start;
-				padding: 10px;
-				padding-left: 0;
+				padding: 50px 10px 80px 0;
 				box-sizing: border-box;
 
 				.title-container {
@@ -68,7 +67,13 @@
 					padding-left: 10px;
 
 					.title-container {
-						width: 100%;
+						width: 95%;
+						margin: 0 auto;
+					}
+					.pratica-container{
+						align-items: center;
+						width: 95%;
+						margin: 0 auto;
 					}
 				}
 
@@ -100,11 +105,7 @@
 		#right-arrow {
 			padding: 5px;
 		}
-		&.is-mobile {
-			.pratica-container{
-				align-items: center;
-			}
-		}
+
 }
 
 

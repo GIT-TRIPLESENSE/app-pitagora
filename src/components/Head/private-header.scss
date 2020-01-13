@@ -6,6 +6,7 @@
     background-color: $background-mobile-color;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
 
+
     .logo-content {
         margin-left: 60px;
         flex: 1;
@@ -92,7 +93,7 @@
 
 .is-mobile {
 
-    max-width: 375px;
+    // max-width: 375px;
 
     .mobile-only {
         display: flex !important;
@@ -107,5 +108,7 @@
         justify-content: flex-end;
         width: 100%;
         flex: 1;
+        position: fixed;
+        z-index: 1;
     }
 }
