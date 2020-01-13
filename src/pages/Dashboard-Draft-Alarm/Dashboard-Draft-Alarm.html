@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="main-container">
-            <div class="side-menu flex-column desktop-only">
+            <div class="side-menu desktop-only">
                 <div class="top-menu flex-column">
                     <!-- aggiungere la classe --active-- per l'elemento selezionato -->
                     <div class="menu-element active">
@@ -66,13 +66,17 @@
                     </div>
                     <div class="menu-element">
 
-                            <svg class="icon" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <g id="Asset-Artboard-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <g id="Icons/Utility/Placeholder-Icons/Utility/Archive" transform="translate(-2.000000, -2.000000)" fill="#002956">
-                                        <path d="M28.4444444,9.77777778 L28.4444444,30 L3.55555556,30 L3.55555556,9.77777778 L28.4444444,9.77777778 Z M19.8888889,14.4444444 L12.1111111,14.4444444 C11.6817778,14.4444444 11.3333333,14.7928889 11.3333333,15.2222222 L11.3333333,17.5555556 L20.6666667,17.5555556 L20.6666667,15.2222222 C20.6666667,14.7928889 20.3182222,14.4444444 19.8888889,14.4444444 Z M30,2 L30,8.22377778 L2,8.22377778 L2,2 L30,2 Z" id="Combined-Shape"></path>
-                                    </g>
+                        <svg class="icon" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Asset-Artboard-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Icons/Utility/Placeholder-Icons/Utility/Archive"
+                                    transform="translate(-2.000000, -2.000000)" fill="#002956">
+                                    <path
+                                        d="M28.4444444,9.77777778 L28.4444444,30 L3.55555556,30 L3.55555556,9.77777778 L28.4444444,9.77777778 Z M19.8888889,14.4444444 L12.1111111,14.4444444 C11.6817778,14.4444444 11.3333333,14.7928889 11.3333333,15.2222222 L11.3333333,17.5555556 L20.6666667,17.5555556 L20.6666667,15.2222222 C20.6666667,14.7928889 20.3182222,14.4444444 19.8888889,14.4444444 Z M30,2 L30,8.22377778 L2,8.22377778 L2,2 L30,2 Z"
+                                        id="Combined-Shape"></path>
                                 </g>
-                            </svg>
+                            </g>
+                        </svg>
                         <p>Archivio</p>
                     </div>
                 </div>
@@ -121,45 +125,48 @@
                     </div>
                 </div>
                 <div class="pratica-container title flex-column">
-                    <h4 class="desktop-only">Piano dei pagamenti</h4>
+                    <p class="desktop-only subtitle">Piano dei pagamenti</p>
                     <!-- aggiungere la classe --alert-- per mostrare lo stato di alert -->
                     <div class="pratica-main alert">
                         <div class="card-pratica title rounded-box flex-column desktop-only">
                             <div class="title-info">
-                                <h3>Info pratica</h3>
+                                <h3 class="bold">Info pratica</h3>
                             </div>
                             <div class="pratica-body-container ">
-                                <div class="row-start">
+                                <div class="flex-column">
                                     <div class="data-container">
-                                        <p class="title"><strong>Prodotto:</strong></p>
+                                        <p class="title bold">Prodotto:</p>
                                         <span class="value">CQS</span>
                                     </div>
                                     <div class="data-container">
-                                        <p class="title"><strong>Decorrenza:</strong></p>
+                                        <p class="title bold">Stato:</p>
+                                        <span class="value">In essere</span>
+                                    </div>
+                                </div>
+                                <div class="flex-column">
+                                    <div class="data-container">
+                                        <p class="title bold">Decorrenza:</p>
                                         <span class="value">08/2010</span>
                                     </div>
                                     <div class="data-container">
-                                        <p class="title"><strong>NDG:</strong></p>
-                                        <span class="value">1234567</span>
-                                    </div>
-                                </div>
-                                <div class="row-start">
-                                    <div class="data-container">
-                                        <p class="title"><strong>Stato:</strong></p>
-                                        <span class="value">In essere</span>
-                                    </div>
-                                    <div class="data-container">
-                                        <p class="title"><strong>Filiale di
-                                                competenza:</strong></p>
+                                        <p class="title bold">Filiale di
+                                                competenza:</p>
                                         <span class="value">Verona</span>
                                     </div>
+                                </div>
+                                <div class="flex-column">
                                     <div class="data-container">
-                                        <p class="title"><strong>Data ultimo incasso:</strong>
+                                        <p class="title bold">NDG:</p>
+                                        <span class="value">1234567</span>
+                                    </div>
+                                    <div class="data-container">
+                                        <p class="title bold">Data ultimo incasso:
                                         </p>
                                         <span class="value">31/8/2019</span>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="info-pratica row">
                                 <div class="alert-container row">
                                     <img src="../../static/assets/placeholders/alert-icon.png">
@@ -286,7 +293,7 @@
                                 <a href="somewhere">Maggiori info</a>
                             </div>
                         </div>
-                        <div class="pratica-container flex-column">
+                        <div class="pratica-details flex-column">
                             <div class="title-container row">
                                 <div class="title-info title">
                                     <h3>Info pratica</h3>
@@ -295,32 +302,32 @@
                             <div class="pratica-body-container flex-column">
                                 <div class="row-start">
                                     <div class="data-container flex-column">
-                                        <p class="title"><strong>Prodotto:</strong></p>
+                                        <p class="title bold">Prodotto:</p>
                                         <p>CQS</p>
                                     </div>
                                     <div class="data-container flex-column">
-                                        <p class="title"><strong>Decorrenza:</strong></p>
+                                        <p class="title bold">Decorrenza:</p>
                                         <p>08/2010</p>
                                     </div>
                                 </div>
                                 <div class="row-start">
                                     <div class="data-container flex-column">
-                                        <p class="title"><strong>NDG:</strong></p>
+                                        <p class="title bold">NDG:</p>
                                         <p>1234567</p>
                                     </div>
                                     <div class="data-container flex-column">
-                                        <p class="title"><strong>Stato:</strong></p>
+                                        <p class="title bold">Stato:</p>
                                         <p>In essere</p>
                                     </div>
                                 </div>
                                 <div class="row-start">
                                     <div class="data-container flex-column">
-                                        <p class="title"><strong>Filiale di
-                                                competenza:</strong></p>
+                                        <p class="title bold">Filiale di
+                                                competenza:</p>
                                         <p>Verona</p>
                                     </div>
                                     <div class="data-container flex-column">
-                                        <p class="title"><strong>Data ultimo incasso:</strong>
+                                        <p class="title bold">Data ultimo incasso:
                                         </p>
                                         <p>31/8/2019</p>
                                     </div>
@@ -341,7 +348,7 @@
                         <div class="advance-container card flex-column">
                             <div class="title-container row">
                                 <div class="title-info title">
-                                    <h3>I miei anticipi</h3>
+                                    <h3 class="bold">I miei anticipi</h3>
                                 </div>
                                 <div class="button-slider-container row">
                                     <div class="button-arrow" id="left-arrow">
@@ -359,27 +366,27 @@
                                 <div class="column flex-column">
                                     <div class="row-card row">
                                         <div class="data-container">
-                                            <p class="title"><strong>Numero Richiesta:</strong></p>
+                                            <p class="title bold">Numero Richiesta:</p>
                                             <p>1</p>
                                         </div>
                                         <div class="data-container">
-                                            <p class="title"><strong>Stato:</strong></p>
+                                            <p class="title bold">Stato:</p>
                                             <p>Richiesta inserita</p>
                                         </div>
                                     </div>
                                     <div class="row-card row">
                                         <div class="data-container">
-                                            <p class="title"><strong>Importo:</strong></p>
+                                            <p class="title bold">Importo:</p>
                                             <p>1.000,00€</p>
                                         </div>
                                         <div class="data-container">
-                                            <p class="title"><strong>Modalità erogazione:</strong></p>
+                                            <p class="title bold">Modalità erogazione:</p>
                                             <p>Bonifico</p>
                                         </div>
                                     </div>
                                     <div class="row-card row">
                                         <div class="data-container">
-                                            <p class="title"><strong>Data inserimento:</strong></p>
+                                            <p class="title bold">Data inserimento:</p>
                                             <p>25/06/2019</p>
                                         </div>
                                     </div>
@@ -390,7 +397,7 @@
                         <div class="refund-container card flex-column">
                             <div class="title-container row">
                                 <div class="title-info">
-                                    <h3>I miei rimborsi</h3>
+                                    <h3 class="bold">I miei rimborsi</h3>
                                 </div>
                                 <div class="button-slider-container row">
                                     <div class="button-arrow" id="left-arrow">
@@ -408,27 +415,27 @@
                                 <div class="column flex-column">
                                     <div class="row-card row">
                                         <div class="data-container">
-                                            <p class="title"><strong>Tipo di rimborso:</strong></p>
+                                            <p class="title bold">Tipo di rimborso:</p>
                                             <p>133658</p>
                                         </div>
                                         <div class="data-container">
-                                            <p class="title"><strong>Raccomandata:</strong></p>
+                                            <p class="title bold">Raccomandata:</p>
                                             <p>123456789</p>
                                         </div>
                                     </div>
                                     <div class="row-card row">
                                         <div class="data-container">
-                                            <p class="title"><strong>Importo:</strong></p>
+                                            <p class="title bold">Importo:</p>
                                             <p>350,00€</p>
                                         </div>
                                         <div class="data-container">
-                                            <p class="title"><strong>Indirizzo di spedizione:</strong></p>
+                                            <p class="title bold">Indirizzo di spedizione:</p>
                                             <p>Via Tirreno 56, 10136 - Torino</p>
                                         </div>
                                     </div>
                                     <div class="row-card row">
                                         <div class="data-container">
-                                            <p class="title"><strong>Data invio assegno di traenza:</strong></p>
+                                            <p class="title bold">Data invio assegno di traenza:</p>
                                             <p>25/06/2010</p>
                                         </div>
                                     </div>

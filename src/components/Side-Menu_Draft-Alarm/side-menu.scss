@@ -1,7 +1,9 @@
 .side-menu {
-    flex: 1;
+
     align-items: flex-start;
-    padding: 10px;
+    padding: 10px 10px 16px;
+    flex-direction: column;
+    justify-content: space-between;
 
     .top-menu {
         width: 100%;
@@ -36,9 +38,24 @@
         width: 100%;
         box-sizing: border-box;
         padding: 0 10px;
-        flex: 1;
         justify-content: flex-end;
         align-items: flex-start;
+
+        .button {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        
+            .arrow {
+                height: 10px;
+                width: 10px;
+                border-right: 2px solid black;
+                border-bottom: 2px solid black;
+                transform: rotate(-45deg);
+            }
+        }
 
     }
 
@@ -85,18 +102,3 @@
     }
 }
 
-.button {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-
-    .arrow {
-        height: 10px;
-        width: 10px;
-        border-right: 2px solid black;
-        border-bottom: 2px solid black;
-        transform: rotate(-45deg);
-    }
-}

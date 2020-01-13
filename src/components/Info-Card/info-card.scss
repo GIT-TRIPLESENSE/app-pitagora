@@ -67,68 +67,62 @@
 
 
 
-// .info-card-container {
-//     display: flex;
-//     width: 100%;
-//     padding-top: 20px;
-//     flex: 2;
-//     box-sizing: border-box;
 
-//     .card {
-//         border-radius: 8px;
-//         background-color: $background-mobile-color;
-//         box-shadow: 0 4px 12px 6px rgba(0, 0, 0, 0.06);
-//         box-sizing: border-box;
-//         padding: 20px 30px;
-//     }
 
-//     .info-card-body {
-//         height: 80%;
-//         width: 100%;
-//         position: relative;
 
-//         .column {
-//             height: 100%;
-//             width: 100%;
-//             justify-content: space-around;
-//             align-items: flex-start;
+.info-card-container {
+    display: flex;
+    width: 100%;
+    padding-top: 8px;
+    box-sizing: border-box;
 
-//             .row-card {
-//                 width: 100%;
-//                 justify-content: flex-start;
+    .card {
+        border-radius: 8px;
+        background-color: $background-mobile-color;
+        box-shadow: 0 4px 12px 6px rgba(0, 0, 0, 0.06);
+        box-sizing: border-box;
+        padding: 20px 30px;
+        margin-right: 10px;
+        box-sizing: border-box;
+    }
 
-//                 .data-container {
-//                     flex: 1;
-//                 }
-//             }
+    .info-card-body {
+        height: 80%;
+        width: 100%;
+        position: relative;
 
-//             .show-more {
-//                 position: absolute;
-//                 right: 20px;
-//                 bottom: 0px;
+        .column {
+            height: 100%;
+            width: 100%;
+            justify-content: space-around;
+            align-items: flex-start;
 
-//                 a {
-//                     color: #0061D3;
-//                 }
-//             }
-//         }
-//     }
+            .row-card {
+                width: 100%;
+                justify-content: flex-start;
 
-//     .title-container {
-//         width: 100%;
-//     }
+                .data-container {
+                    flex: 1;
+                }
+            }
 
-//     .advance-container {
-//         flex: 1;
-//         margin-right: 10px;
-//         box-sizing: border-box;
-//     }
+            .show-more {
+                position: absolute;
+                right: 20px;
+                bottom: 0px;
 
-//     .button-arrow {
-//         padding: 5px;
-//     }
+                a {
+                    color: #0061D3;
+                }
+            }
+        }
+    }
 
-//     .refund-container {
-//         flex: 1;
-//     }
-// }
+    .title-container {
+        width: 100%;
+    }
+
+    .button-arrow {
+        padding: 5px;
+    }
+}

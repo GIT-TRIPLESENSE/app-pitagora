@@ -3,14 +3,14 @@
 		background-color: $text-secondary-color;
 
 		.main-container {
-
-			display: block;
+			margin-top: 90px;
+			display: flex;
  
 			.main {
 				// flex: 5;
 				align-items: flex-start;
-				padding: 50px 10px 80px 0;
 				box-sizing: border-box;
+				padding: 16px;
 
 				.title-container {
 					position: relative;
@@ -60,11 +60,12 @@
 
 			.main-container {
 
+				margin-top: 0px;
 				
 				.main {
 					width: 100%;
 					align-content: center;
-					padding-left: 10px;
+					padding: $header-height 0px $footer-height 0;
 
 					.title-container {
 						width: 95%;
@@ -72,7 +73,7 @@
 					}
 					.pratica-container{
 						align-items: center;
-						width: 95%;
+						width: 100%;
 						margin: 0 auto;
 					}
 				}

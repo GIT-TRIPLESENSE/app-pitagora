@@ -5,6 +5,9 @@
     align-items: center;
     background-color: $background-mobile-color;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
+    position: fixed;
+    top: 0;
+    z-index: 1;
 
 
     .logo-content {
@@ -107,8 +110,28 @@
         display: flex;
         justify-content: flex-end;
         width: 100%;
-        flex: 1;
         position: fixed;
         z-index: 1;
     }
 }
+
+// @media only screen and (max-width: 600px) {
+
+//     // max-width: 375px;
+
+//     .mobile-only {
+//         display: flex !important;
+//     }
+
+//     .desktop-only {
+//         display: none !important;
+//     }
+
+//     .private-head-container {
+//         display: flex;
+//         justify-content: flex-end;
+//         width: 100%;
+//         position: fixed;
+//         z-index: 1;
+//     }
+// }
