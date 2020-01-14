@@ -80,8 +80,6 @@
         }
 
         .data-container {
-            flex: 1;
-
             .value {
                 padding-bottom: 10px;
             }
@@ -243,6 +241,7 @@
 
     div.flex-column {
         align-items: flex-start;
+        justify-content: space-around;
 
         .data-container {
             align-items: flex-start;
