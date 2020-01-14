@@ -14,14 +14,16 @@
             display: flex;
             align-items: center;
             padding: 5px;
+            position: relative;
 
             &.active::before {
                 content: "";
-                height: 56px;
                 width: 4px;
                 background-color: #007DC5;
-                left: 0;
+                left: -10px;
                 position: absolute;
+                top: 0;
+                bottom: 0;
             }
 
             &.active {
