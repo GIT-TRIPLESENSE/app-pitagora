@@ -14,6 +14,11 @@ html {
 				width: 90%;
 				height: 100%;
 				margin: 0 auto;
+
+				@media only screen and (max-width: 912px) {
+					padding-top: 30px;
+				}
+
 			}
 
 			.mobile-only {
@@ -29,7 +34,6 @@ html {
 					flex-direction: column;
 					align-items: center;
 					justify-content: space-evenly;
-					flex: 10;
 					position: relative;
 					width: 100%;
 				}
@@ -57,7 +61,6 @@ html {
 					flex-direction: column;
 					align-items: center;
 					justify-content: space-evenly;
-					flex: 10;
 					position: fixed;
 					width: 100%;
 

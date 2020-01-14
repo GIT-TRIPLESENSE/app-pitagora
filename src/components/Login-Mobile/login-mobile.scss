@@ -46,5 +46,11 @@
         a:link {
             color: $accent-color;
         }
+
+        p {
+            @media only screen and (max-width: 321px) {
+                margin: 0;
+                }
+        }
     }
 }

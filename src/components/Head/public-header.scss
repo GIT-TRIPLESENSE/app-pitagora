@@ -6,9 +6,26 @@
     justify-items: start;
     align-items: center;
 
+
+    // @supports (padding: max(0)) and (padding: env(safe-area-inset-bottom)) {
+    // padding-top:  max(30px, calc(env(safe-area-inset-top)));
+    // }
+
+    @media only screen and (max-width: 912px) {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        background-color: $background-mobile-color;
+        padding-top: 30px;
+        }
+
     .logo-content {
         margin-left: 60px;
         flex: 1;
+        @media only screen and (max-width: 912px) {
+            margin-left: 20px;
+    
+            }
     }
 
     .head-title {
@@ -27,32 +44,6 @@
         padding: 5px;
 
         }
-    }
-
-    .icons-container {
-        display: flex;
-        justify-content: flex-start;
-
-        img#user {
-            height: auto;
-            width: 44px;
-        }
-
-        @media only screen and (max-width: 600px) {
-            position: absolute;
-            right: 5px;
-
-            img#bell {
-                height: auto;
-                width: 25px;
-            }
-
-            img#user {
-                height: auto;
-                width: 35px;
-            }
-        }
-
     }
 
     .legal-info-content {

@@ -100,6 +100,72 @@
 				}
 			}
 		}
+
+		@media only screen and (max-width: 940px) {
+			.mobile-only {
+				display: flex !important;
+			}
+
+			.desktop-only {
+				display: none !important;
+			}
+
+			// .head-container {
+			// 	display: flex;
+			// 	justify-content: flex-end;
+			// 	width: 100%;
+			// 	flex: 1;
+			// }
+
+			.main-container {
+
+				margin-top: 0px;
+				
+				.main {
+					width: 100%;
+					align-content: center;
+					padding: $header-height 0px $footer-height 0;
+
+					.title-container {
+						width: 95%;
+						margin: 0 auto;
+					}
+					.pratica-container{
+						align-items: center;
+						width: 100%;
+						margin: 0 auto;
+					}
+				}
+
+				.buttons-container {
+					padding: 15px;
+					-webkit-box-flex: 1;
+					flex: 1;
+					display: flex;
+
+					.btn-slider {
+						// PLACEHOLDER PER IMMAGINE
+						height: 8px;
+						background-color: #072952;
+						border-radius: 100%;
+						width: 8px;
+						margin: 0 4px;
+						opacity: 0.15;
+
+						&.active {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+
+
+
+
+
+
+
 		#left-arrow {
 			padding: 5px;
 		}
