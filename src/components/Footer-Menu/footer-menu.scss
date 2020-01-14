@@ -10,17 +10,16 @@
     .menu-btn {
         height: 45px;
         justify-content: space-between;
+        text-align: center;
+
+        span.icon-Situation::before , span.icon-Request::before {
+            font-size: 26px;
+        }
     }
 
     .menu-btn.active {
         color: #007AFF;
-
-        .menu-icon {
-            path {
-                fill: #007AFF;
-            }
         }
-    }
 
     p {
         font-size: 10px;

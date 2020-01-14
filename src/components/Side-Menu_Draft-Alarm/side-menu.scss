@@ -23,6 +23,13 @@
                 left: 0;
                 position: absolute;
             }
+
+            &.active {
+                
+                span.icon::before {
+                    color: #007DC5;
+                }
+            }
         }
     }
 

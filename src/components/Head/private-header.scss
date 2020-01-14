@@ -23,7 +23,7 @@
 
     img {
         // height: 30px;
-        padding: 15px;
+        padding: 5px;
         max-width: 200px;
 
         @media only screen and (max-width: 912px) {
@@ -41,21 +41,6 @@
             height: auto;
             width: 44px;
         }
-
-        // @media only screen and (max-width: 600px) {
-        //     position: absolute;
-        //     right: 5px;
-
-        //     img#bell {
-        //         height: auto;
-        //         width: 25px;
-        //     }
-
-        //     img#user {
-        //         height: auto;
-        //         width: 35px;
-        //     }
-        // }
 
     }
 

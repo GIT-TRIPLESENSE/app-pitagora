@@ -1,12 +1,14 @@
 .pratica-container {
     width: 100%;
     align-items: flex-start;
+
     p.subtitle {
-        color: #072952;	
-        font-family: Roboto;	
-        font-size: 20px;	
+        color: #072952;
+        font-family: Roboto;
+        font-size: 20px;
         line-height: 26px;
     }
+
     .title-info {
         display: flex;
         padding: 0 10px;
@@ -58,13 +60,17 @@
                 justify-items: flex-start;
                 align-items: center;
                 opacity: 0;
-            }
 
-            img {
-                // da gestire svg !!
-                // mettere colore #F6B400  in caso di alarm e non error
-                padding: 5px;
-                height: 24px;
+
+                span.icon {
+
+                    padding: 5px;
+                    height: 24px;
+
+                    &::before {
+                        color: #F6B400;
+                    }
+                }
             }
 
             p#update-date {
@@ -130,11 +136,12 @@
     padding: 10px 20px;
 
     &.desktop-only {
-        padding: 20px 20px;
+        padding: 20px;
         position: absolute;
-        right: -11%;
-        top: -40px;
+        right: -10%;
+        top: -45px;
         width: 40%;
+        height: 90%;
     }
 
     .summary {
@@ -149,7 +156,8 @@
         .row {
             width: 100%;
         }
-        @media screen and (min-width: 650px) and (max-width: 939px) { 
+
+        @media screen and (min-width: 650px) and (max-width: 939px) {
             width: 60%;
 
         }
@@ -257,6 +265,7 @@
         height: 50px;
         border-radius: 6px;
         justify-content: space-around;
+        margin-right: 0px;
 
         .data-btn {
             flex: 1;
@@ -271,6 +280,9 @@
             font-size: 12px;
             line-height: 16px;
             padding: 23px;
+            @media only screen and (max-width: 321px) {
+                padding: 20px 18px;
+            }
 
             &.active {
                 font-weight: bold;
@@ -372,50 +384,50 @@
 
 .private {
 
-@media only screen and (max-width: 940px) {
+    @media only screen and (max-width: 940px) {
 
-    .alert-box {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        border: 2px solid #F6B400;
-        border-radius: 8px;
-        margin: 10px;
-        box-sizing: border-box;
-        padding: 10px;
-        height: 100px;
+        .alert-box {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            border: 2px solid #F6B400;
+            border-radius: 8px;
+            margin: 10px;
+            box-sizing: border-box;
+            padding: 10px;
+            height: 100px;
 
-        img {
-            height: auto;
-            width: 1.5em;
-            padding-right: 5px;
-        }
+            img {
+                height: auto;
+                width: 1.5em;
+                padding-right: 5px;
+            }
 
-        div.row {
-            justify-content: flex-end;
-        }
+            div.row {
+                justify-content: flex-end;
+            }
 
-        p,
-        a {
-            font-size: 14px;
-            margin: 0;
+            p,
+            a {
+                font-size: 14px;
+                margin: 0;
 
-            &.title {
-                font-weight: bold;
-                line-height: 18px;
+                &.title {
+                    font-weight: bold;
+                    line-height: 18px;
+                }
+            }
+
+            a {
+                color: #0061D3;
+            }
+
+            &.alert {
+                display: flex;
+
             }
         }
-
-        a {
-            color: #0061D3;
-        }
-
-        &.alert {
-            display: flex;
-
-        }
     }
-}
 
-    
+
 }
