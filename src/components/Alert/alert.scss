@@ -9,7 +9,7 @@
     position: relative;
     text-align: center;
 
-    &__img {
+    .alert__img {
         position: absolute;
         background-color: #fbfbfb;
         top: -50px;
@@ -17,7 +17,7 @@
         border-radius: 100%;
     }
 
-    &__title {
+    .alert__title {
         p {
             opacity: 0.8;
             font-size: 22px;
@@ -26,7 +26,7 @@
         }
     }
 
-    &__text {
+    .alert__text {
         p {
             opacity: 0.8;
             font-size: 16px;

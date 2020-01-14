@@ -7,6 +7,7 @@
 
     &.is-last {
         min-height: 115px;
+
         .info-card__body__info-area {
             max-height: 65px;
         }
@@ -76,53 +77,57 @@
     padding-top: 8px;
     box-sizing: border-box;
 
-    .card {
-        border-radius: 8px;
-        background-color: $background-mobile-color;
-        box-shadow: 0 4px 12px 6px rgba(0, 0, 0, 0.06);
-        box-sizing: border-box;
-        padding: 20px 30px;
-        margin-right: 10px;
-        box-sizing: border-box;
-    }
+}
 
-    .info-card-body {
-        height: 80%;
+.card {
+    border-radius: 8px;
+    background-color: $background-mobile-color;
+    box-shadow: 0 4px 12px 6px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+    padding: 20px 30px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+.info-card-body {
+    height: 80%;
+    width: 100%;
+    position: relative;
+
+    .column {
+        height: 100%;
         width: 100%;
-        position: relative;
+        justify-content: space-around;
+        align-items: flex-start;
 
-        .column {
-            height: 100%;
+        .row-card {
             width: 100%;
-            justify-content: space-around;
-            align-items: flex-start;
+            justify-content: flex-start;
 
-            .row-card {
-                width: 100%;
-                justify-content: flex-start;
-
-                .data-container {
-                    flex: 1;
-                }
+            .data-container {
+                flex: 1;
             }
+        }
 
-            .show-more {
-                position: absolute;
-                right: 20px;
-                bottom: 0px;
+        .show-more {
+            position: absolute;
+            right: 20px;
+            bottom: 0px;
 
-                a {
-                    color: #0061D3;
-                }
+            a {
+                color: #0061D3;
             }
         }
     }
+}
 
-    .title-container {
-        width: 100%;
+.title-container {
+    width: 100%;
+    p {
+        padding: 0 5px;
     }
+}
 
-    .button-arrow {
-        padding: 5px;
-    }
+.button-arrow {
+    padding: 5px;
 }

@@ -57,9 +57,9 @@
         padding-bottom: 10px;
   
         img {
-          width: 32px;
+          width: 20px;
           height: auto;
-          padding: 2px;
+          padding: 5px;
         }
   
         p {
@@ -115,17 +115,29 @@
   
     .password-eye {
       position: absolute;
-      right: 5px;
+      right: 10px;
       bottom: 25%;
   
       img {
-        width: 30px;
+        width: 20px;
         height: auto;
         opacity: 0.6;
       }
+
+      .content-hidden {
+        display: block;
+      }
+      .content-revealed {
+        display: none;
+      }
   
-      &.active {
-        opacity: 1;
+      &.reveal {
+        .content-hidden {
+          display: none;
+        }
+        .content-revealed {
+          display: block;
+        }
       }
     }
   }

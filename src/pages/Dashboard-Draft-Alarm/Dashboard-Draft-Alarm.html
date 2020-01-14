@@ -93,10 +93,10 @@
                     </div>
                     <div class="cta-container card flex-column">
                         <div class="row">
-                            <img src="../../static/assets/placeholders/mail-ico.svg">
+                            <img src="../../static/assets/mail-icon.svg">
                             <p>Hai bisogno d'aiuto?</p>
                         </div>
-                        <button id="contact-btn">
+                        <button id="contact-btn" class="no-focus">
                             <!-- p 16px -->
                             <p><strong>SCRIVICI</strong></p>
                         </button>
@@ -106,6 +106,8 @@
             <div class="main flex-column">
                 <div class="title-container row-start title desktop-only">
                     <h2>Il tuo finanziamento</h2>
+
+                    <!-- inserire a -buttons-title-container- le classi --has-prev-- e --has-next-- nel caso ci siano rispettivamente un finanziamento precedente o uno successivo (o entrambe)-->
                     <div class="buttons-title-container row">
                         <div id="left-arrow" class="button">
                             <img src="../../static/assets/back.svg">
@@ -116,12 +118,17 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="title-container row title mobile-only">
                     <h3>Il tuo finanziamento:</h3>
                     <div class="row">
-                        <div id="left-arrow" class="button">left</div>
+                        <div id="left-arrow" class="button">
+                            <img src="../../static/assets/l_arrow.svg">
+                        </div>
                         <p>1/2</p>
-                        <div id="right-arrow" class="button">right</div>
+                        <div id="right-arrow" class="button">
+                                <img src="../../static/assets/r_arrow.svg">
+                        </div>
                     </div>
                 </div>
                 <div class="pratica-container title flex-column">
@@ -169,7 +176,7 @@
 
                             <div class="info-pratica row">
                                 <div class="alert-container row">
-                                    <img src="../../static/assets/placeholders/alert-icon.png">
+                                    <img src="../../static/assets/alert.svg">
                                     <p><strong>La pratica risulta in gestione al
                                             recupero crediti</strong></p>
                                 </div>
@@ -283,7 +290,7 @@
                         <div class="alert-box card">
                             <div class="row-start flex-1">
                                 <div>
-                                    <img src="../../static/assets/alert-icon.png">
+                                    <img src="../../static/assets/alert.svg">
                                 </div>
                                 <p class="title">Attenzione!</p>
                             </div>
@@ -346,22 +353,20 @@
 
                     <!-- info-card component -->
                     <div class="info-card-container desktop-only">
-                        <div class="advance-container card flex-column">
+                        <div class="card flex-column">
                             <div class="title-container row">
                                 <div class="title-info title">
                                     <h3 class="bold">I miei anticipi</h3>
                                 </div>
-                                <div class="button-slider-container row">
-                                    <div class="button-arrow" id="left-arrow">
-                                        <!-- img placeholder -->
-                                        left
+                                <div class="row">
+                                        <div id="left-arrow" class="button">
+                                            <img src="../../static/assets/l_arrow.svg">
+                                        </div>
+                                        <p>1/3</p>
+                                        <div id="right-arrow" class="button">
+                                                <img src="../../static/assets/r_arrow.svg">
+                                        </div>
                                     </div>
-                                    <p id="slide-counter">1/3</p>
-                                    <div class="button-arrow" id="right-arrow">
-                                        right
-                                        <!-- img placeholder -->
-                                    </div>
-                                </div>
                             </div>
                             <div class="info-card-body row">
                                 <div class="column flex-column">
@@ -395,22 +400,20 @@
 
                             </div>
                         </div>
-                        <div class="refund-container card flex-column">
+                        <div class="card flex-column">
                             <div class="title-container row">
                                 <div class="title-info">
                                     <h3 class="bold">I miei rimborsi</h3>
                                 </div>
-                                <div class="button-slider-container row">
-                                    <div class="button-arrow" id="left-arrow">
-                                        <!-- link placeholder -->
-                                        left
+                                <div class="row">
+                                        <div id="left-arrow" class="button">
+                                            <img src="../../static/assets/l_arrow.svg">
+                                        </div>
+                                        <p>1/3</p>
+                                        <div id="right-arrow" class="button">
+                                                <img src="../../static/assets/r_arrow.svg">
+                                        </div>
                                     </div>
-                                    <p id="slide-counter">1/3</p>
-                                    <div class="button-arrow" id="right-arrow">
-                                        <!-- link placeholder -->
-                                        right
-                                    </div>
-                                </div>
                             </div>
                             <div class="info-card-body row">
                                 <div class="column flex-column">
@@ -450,6 +453,9 @@
                 </div>
             </div>
         </div>
+
+
+
         <!-- componente footer menu -->
         <div class="footer-menu-container row mobile-only">
             <!-- inserire classe --active-- per button attivo -->

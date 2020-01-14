@@ -29,7 +29,7 @@
 				<div class="slider-body">
 					<!-- aggiungere la classe slide-active per mostrare la slide corretta -->
 					<div class="slide flex-column" id="slide-1">
-						<div class="img-container">
+						<div class="img-container no-focus">
 							<img src="../../static/assets/img1.png" />
 						</div>
 						<div class="txt-info-container flex-column">
@@ -40,14 +40,14 @@
 					</div>
 					<div class="slide flex-column slide-active" id="slide-2">
 						<div class="img-container">
-							<img src="../../static/assets/placeholders/slider-mobile.png" />
+								<img src="../../static/assets/slider-products.png">
 						</div>
 						<div class="txt-info-container flex-column">
 							<h3>Prodotti</h3>
 							<p>Scopri i prodotti Pitagora!</p>
 						</div>
 						<div class="request-container">
-							<button id="products-btn" class="button-request-slider">
+							<button id="products-btn" class="button-request-slider no-focus">
 								<p>SCOPRI I PRODOTTI</p>
 							</button>
 						</div>
@@ -56,7 +56,7 @@
 				</div>
 			</div>
 			<!-- slider buttons-- aggiungere la classe -active- per il bottone corrente -->
-			<div class="buttons-container">
+			<div class="buttons-container no-focus">
 				<div id="btn-1" class="btn-slider"></div>
 				<div id="btn-2" class="btn-slider active"></div>
 				<div id="btn-3" class="btn-slider"></div>
@@ -112,7 +112,7 @@
 													placeholder="Username" />
 											</label>
 											<span class="error-msg-container row-start">
-												<img src="../../static/assets/placeholders/error-icon.png">
+												<img src="../../static/assets/alert.svg">
 												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 											</span>
 										</div>
@@ -124,23 +124,24 @@
 												<span class="input-span">Password</span>
 												<input class="input-field" type="password" id="password" name="password"
 												placeholder="Password" />
-												<div class="password-eye button active">
+										<!-- aggiungere la classe --reveal-- se bottone premuto -->
+												<div class="password-eye button reveal">
 													<!-- cambiare l'asset con quello più scuro, ho applicato l'opacity se non selezionato -->
-													<img src="../../static/assets/placeholders/password-eye-icon.png">
+													<img class="content-hidden" src="../../static/assets/eye.svg">
+													<img class="content-revealed" src="../../static/assets/barred-eye.svg">
 												</div>
 											</label>
 											<span class="error-msg-container row-start">
-												<img src="../../static/assets/placeholders/error-icon.png">
+												<img src="../../static/assets/alert.svg">
 
 												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 											</span>
 										</div>
 										<!-- fine password input container -->
 
-										<!-- aggiungere la classe --active-- se bottone premuto -->
 									</div>
 									<div class="error-msg-container row-start">
-										<img src="../../static/assets/placeholders/error-icon.png">
+										<img src="../../static/assets/alert.svg">
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 									</div>
 								</div>
@@ -148,7 +149,7 @@
 									<div class="remember-login-wrapper">
 										<div class="row">
 											<input id="remember-login" type="checkbox" />
-											<label class="checkbox-cover" for="remember-login"></label>
+											<label class="checkbox-cover " for="remember-login"></label>
 											<label for="remember-login">Resta collegato</label>
 										</div>
 									</div>
@@ -156,7 +157,7 @@
 								</div>
 							</div>
 								<div class="request-container">
-									<button type="submit" id="sendRequest" class="button-request">
+									<button type="submit" id="sendRequest" class="button-request no-focus">
 										<p>ACCEDI ALL'AREA PERSONALE</p>
 									</button>
 								</div>

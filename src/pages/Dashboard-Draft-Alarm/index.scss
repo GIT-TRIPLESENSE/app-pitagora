@@ -29,6 +29,20 @@
 							padding: 0 5px;
 							opacity: 0.2;
 						}
+
+						&.has-next {
+							
+							#right-arrow {
+								opacity: 1;
+							}
+						}
+						&.has-prev{
+							
+							#left-arrow {
+								opacity: 1;
+							}
+						}
+
 					}
 				}
 			}
@@ -168,6 +182,7 @@
 
 		#left-arrow {
 			padding: 5px;
+
 		}
 		#right-arrow {
 			padding: 5px;

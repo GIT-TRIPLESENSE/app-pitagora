@@ -82,7 +82,7 @@
                                                     placeholder="Username" />
                                             </label>
                                             <span class="error-msg-container row-start">
-                                                <img src="../../static/assets/placeholders/error-icon.png">
+                                                <img src="../../static/assets/alert.svg">
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                             </span>
                                         </div>
@@ -94,23 +94,24 @@
                                                 <span class="input-span">Password</span>
                                                 <input class="input-field" type="password" id="password" name="password"
                                                     placeholder="Password" />
-                                                <div class="password-eye button active">
-                                                    <!-- cambiare l'asset con quello più scuro, ho applicato l'opacity se non selezionato -->
-                                                    <img src="../../static/assets/placeholders/password-eye-icon.png">
+                                                <div class="password-eye button reveal">
+
+                                                    <img class="content-hidden" src="../../static/assets/eye.svg">
+                                                    <img class="content-revealed"
+                                                        src="../../static/assets/barred-eye.svg">
                                                 </div>
                                             </label>
                                             <span class="error-msg-container row-start">
-                                                <img src="../../static/assets/placeholders/error-icon.png">
-
+                                                <img src="../../static/assets/alert.svg">
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                             </span>
                                         </div>
                                         <!-- fine password input container -->
 
-                                        <!-- aggiungere la classe --active-- se bottone premuto -->
+                                        <!-- aggiungere la classe --reveal-- se bottone premuto -->
                                     </div>
                                     <div class="error-msg-container row-start">
-                                        <img src="../../static/assets/placeholders/error-icon.png">
+                                        <img src="../../static/assets/alert.svg">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                     </div>
                                 </div>
@@ -182,7 +183,7 @@
                 <input class="input-field" type="text" id="username" name="username" placeholder="Username" />
             </label>
             <span class="error-msg-container row-start">
-                <img src="../../static/assets/placeholders/error-icon.png">
+                <img src="../../static/assets/alert.svg">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </span>
         </div>
@@ -198,13 +199,14 @@
             <label class="input-label">
                 <span class="input-span">Password</span>
                 <input class="input-field" type="password" id="password" name="password" placeholder="Password" />
-                <div class="password-eye button active">
-                    <!-- cambiare l'asset con quello più scuro, ho applicato l'opacity se non selezionato -->
-                    <img src="../../static/assets/placeholders/password-eye-icon.png">
+                <div class="password-eye button reveal">
+
+                    <img class="content-hidden" src="../../static/assets/eye.svg">
+                    <img class="content-revealed" src="../../static/assets/barred-eye.svg">
                 </div>
             </label>
             <span class="error-msg-container row-start">
-                <img src="../../static/assets/placeholders/error-icon.png">
+                <img src="../../static/assets/alert.svg">
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </span>
@@ -253,13 +255,13 @@
             <label class="checkbox-cover" for="test-radio2">importo netto 2</label>
         </div>
 
-        <!-- inizio radio button component orizzontali --wrappati da un div che abbia classe--row--   -->  
+        <!-- inizio radio button component orizzontali --wrappati da un div che abbia classe--row--   -->
         <div class="row">
-        <div class="row-start">
+            <div class="row-start">
                 <input id="test-radio3" name="radio" type="radio" />
                 <label class="checkbox-cover" for="test-radio3">importo netto</label>
             </div>
-    
+
             <div class="row-start">
                 <input id="test-radio4" name="radio" type="radio" />
                 <label class="checkbox-cover" for="test-radio4">importo netto 2</label>
@@ -580,53 +582,112 @@
         <br>
 
         <div class="slider row mobile-only">
-                <div class="card-summary flex-column mobile-only">
+            <div class="card-summary flex-column mobile-only">
+                <div class="row-start">
+                    <p class="card-title">N° 228002</p>
+                </div>
+                <div class="summary flex-column">
                     <div class="row-start">
-                        <p class="card-title">N° 228002</p>
+                        <p><strong>25.000,00 €</strong></p>
+                        <p><strong>20.000,00 €</strong></p>
                     </div>
-                    <div class="summary flex-column">
-                        <div class="row-start">
-                            <p><strong>25.000,00 €</strong></p>
-                            <p><strong>20.000,00 €</strong></p>
-                        </div>
-                        <div class="row">
-                            <p class="description">Prestito netto banca</p>
-                            <p class="description">Importo pagato</p>
-                        </div>
+                    <div class="row">
+                        <p class="description">Prestito netto banca</p>
+                        <p class="description">Importo pagato</p>
                     </div>
-                    <div class="main-import-container flex-column">
-                        <p id="main-import">5.000</p>
-                        <!-- da mettere un after con il simbolo euro -->
-                        <p class="description">Importo da pagare</p>
+                </div>
+                <div class="main-import-container flex-column">
+                    <p id="main-import">5.000</p>
+                    <!-- da mettere un after con il simbolo euro -->
+                    <p class="description">Importo da pagare</p>
+                </div>
+                <div class="loan-info-container row rounded-box ">
+                    <div class="data-loan flex-column">
+                        <h5 class="data-title">RATE</h5>
+                        <p>120</p>
                     </div>
-                    <div class="loan-info-container row rounded-box ">
-                        <div class="data-loan flex-column">
-                            <h5 class="data-title">RATE</h5>
-                            <p>120</p>
-                        </div>
-                        <div class="line"></div>
-                        <div class="data-loan flex-column">
-                            <h5 class="data-title">IMPORTO</h5>
-                            <p class="data-euro">250</p>
-                            <!-- before con euro -->
-                        </div>
-                        <div class="line"></div>
-                        <div class="data-loan flex-column">
-                            <h5 class="data-title">TAN</h5>
-                            <p class="data-percentage">5,00</p>
-                            <!-- after con % -->
-                        </div>
-                        <div class="line"></div>
-                        <div class="data-loan flex-column">
-                            <h5 class="data-title">TAEG</h5>
-                            <p class="data-percentage">5,26</p>
-                            <!-- after con % -->
-                        </div>
+                    <div class="line"></div>
+                    <div class="data-loan flex-column">
+                        <h5 class="data-title">IMPORTO</h5>
+                        <p class="data-euro">250</p>
+                        <!-- before con euro -->
+                    </div>
+                    <div class="line"></div>
+                    <div class="data-loan flex-column">
+                        <h5 class="data-title">TAN</h5>
+                        <p class="data-percentage">5,00</p>
+                        <!-- after con % -->
+                    </div>
+                    <div class="line"></div>
+                    <div class="data-loan flex-column">
+                        <h5 class="data-title">TAEG</h5>
+                        <p class="data-percentage">5,26</p>
+                        <!-- after con % -->
                     </div>
                 </div>
             </div>
+        </div>
 
-        
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <!-- <div class="info-card-container desktop-only"> -->
+        <div class="refund-container card flex-column">
+            <div class="title-container row">
+                <div class="title-info">
+                    <h3 class="bold">I miei rimborsi</h3>
+                </div>
+                <div class="row">
+                    <div id="left-arrow" class="button">
+                        <img src="../../static/assets/l_arrow.svg">
+                    </div>
+                    <p>1/3</p>
+                    <div id="right-arrow" class="button">
+                        <img src="../../static/assets/r_arrow.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="info-card-body row">
+                <div class="column flex-column">
+                    <div class="row-card row">
+                        <div class="data-container">
+                            <p class="title bold">Tipo di rimborso:</p>
+                            <p>133658</p>
+                        </div>
+                        <div class="data-container">
+                            <p class="title bold">Raccomandata:</p>
+                            <p>123456789</p>
+                        </div>
+                    </div>
+                    <div class="row-card row">
+                        <div class="data-container">
+                            <p class="title bold">Importo:</p>
+                            <p>350,00€</p>
+                        </div>
+                        <div class="data-container">
+                            <p class="title bold">Indirizzo di spedizione:</p>
+                            <p>Via Tirreno 56, 10136 - Torino</p>
+                        </div>
+                    </div>
+                    <div class="row-card row">
+                        <div class="data-container">
+                            <p class="title bold">Data invio assegno di traenza:</p>
+                            <p>25/06/2010</p>
+                        </div>
+                    </div>
+                    <div class="show-more">
+                        <a href="showmore">Mostra di più</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+
+
         <br>
         <br>
         <br>

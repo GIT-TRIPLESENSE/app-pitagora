@@ -61,6 +61,8 @@
             }
 
             img {
+                // da gestire svg !!
+                // mettere colore #F6B400  in caso di alarm e non error
                 padding: 5px;
                 height: 24px;
             }
@@ -268,6 +270,7 @@
             text-align: center;
             font-size: 12px;
             line-height: 16px;
+            padding: 23px;
 
             &.active {
                 font-weight: bold;
