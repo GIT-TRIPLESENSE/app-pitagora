@@ -11,14 +11,15 @@
 
 <body>
 	<!-- PER PASSARE A MOBILE AGGIUNGERE A page-container LA CLASS: is-mobile -->
-	<div class="page-container dashboard-login homepage flex-column is-mobile">
+	<div class="page-container dashboard-login homepage flex-column !is-mobile">
 		<div class="public-head-container">
 			<div class="logo-content desktop-only">
 				<img src="../../static/assets/pitagora-spa-finanziamenti-cessione-quinto-dello-stipendio@2x.png">
 			</div>
 			<div class="legal-info-content mobile-only">
 				<p>Note Legali</p>
-				<div><img src="../../static/assets/ico_note_legali.svg"></div>
+				<!-- <div><img src="../../static/assets/ico_note_legali.svg"></div> -->
+				<span class="icon-ico_note_legali icon"></span>
 			</div>
 		</div>
 
@@ -47,7 +48,7 @@
 							<p>Scopri i prodotti Pitagora!</p>
 						</div>
 						<div class="request-container">
-							<button id="products-btn" class="button-request-slider no-focus">
+							<button id="products-btn" class="button-request-slider button no-focus">
 								<p>SCOPRI I PRODOTTI</p>
 							</button>
 						</div>

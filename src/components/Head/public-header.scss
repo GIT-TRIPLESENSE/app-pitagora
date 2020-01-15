@@ -7,10 +7,6 @@
     align-items: center;
 
 
-    // @supports (padding: max(0)) and (padding: env(safe-area-inset-bottom)) {
-    // padding-top:  max(30px, calc(env(safe-area-inset-top)));
-    // }
-
     @media only screen and (max-width: 912px) {
         position: fixed;
         top: 0;
@@ -18,7 +14,9 @@
         background-color: $background-mobile-color;
         padding-top: 30px;
         }
-
+    @media only screen and (max-width: 320px) {
+        padding-top: 0;
+    }
     .logo-content {
         margin-left: 60px;
         flex: 1;
@@ -55,6 +53,15 @@
             font-size: 14px;
             color: $accent-color;
             font-family: roboto-bold;
+        }
+        .icon-ico_note_legali {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+
+            &:active {
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+            }
         }
     }
 

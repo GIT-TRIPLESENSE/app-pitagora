@@ -69,6 +69,9 @@
                     background: linear-gradient(270deg, #0063CE 0%, #002855 100%);
                     cursor: pointer;
                     font-size: 14px;
+                    &:active {
+                        -webkit-tap-highlight-color: rgba(0,0,0,0);
+                    }
                 }
             }
 

@@ -22,12 +22,13 @@
         content: "";
         height: 27px;
         width: 28px;
-        left: 8px;
+        left: 4px;
         bottom: 4px;
         background-color: #F1F2F8;
         -webkit-transition: .4s;
         transition: .4s;
         border-radius: 50%;
+        transform: translateX(0);
     }
 
     input {
@@ -45,7 +46,9 @@
     }
 
     input:checked+.btnSwitch__slider:before {
-        transform: translateX(26px);
+        transform: translateX(34px);
+        transition: .4s;
+        -webkit-transition: .4s;
     }
 
 

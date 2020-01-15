@@ -29,11 +29,6 @@
 // }
 
 
-
-
-
-
-
 @font-face {
     font-family: 'icomoon';
     src: url('../static/fonts/icomoon.eot?wu9zav');
@@ -61,6 +56,17 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.icon-ico_info_dati:before {
+    content: "\e903";
+    color: #072952;
+    font-size: 18px;
+  }
+  .icon-ico_note_legali:before {
+    content: "\e91c";
+    color: #002855;
+    font-size: 24px;
+  }
 
 .icon-alert:before {
     content: "\e900";

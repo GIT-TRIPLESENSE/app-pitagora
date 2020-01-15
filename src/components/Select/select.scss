@@ -44,20 +44,20 @@
                 transition: all 0.5s ease-in-out;
                 position: absolute;
                 left: 5px;
-                top: 1px;
+                //top: 1px;
             }
 
             &:hover {
                 &:before {
                     transition: all 0.5s ease-in-out;
-                    height: 50px;
+                    height: 100%;
                 }
             }
 
             &.selected {
                 background-color: #f1f2f8;
                 &:before {
-                    height: 50px;
+                    height: 100%;
                 }
             }
         }
