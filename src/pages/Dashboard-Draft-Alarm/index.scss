@@ -98,6 +98,7 @@
 					-webkit-box-flex: 1;
 					flex: 1;
 					display: flex;
+					justify-content: center;
 
 					.btn-slider {
 						// PLACEHOLDER PER IMMAGINE
@@ -157,6 +158,7 @@
 					-webkit-box-flex: 1;
 					flex: 1;
 					display: flex;
+					justify-content: center;
 
 					.btn-slider {
 						// PLACEHOLDER PER IMMAGINE
@@ -181,12 +183,12 @@
 
 
 
-		#left-arrow {
-			padding: 5px;
+		#left-arrow, #right-arrow {
+			padding: 10px;
 
-		}
-		#right-arrow {
-			padding: 5px;
+			&:active {
+				-webkit-tap-highlight-color: rgba(0,0,0,0);
+			}
 		}
 
 }

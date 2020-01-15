@@ -2,24 +2,32 @@
     background-color: #FFF;
     width: 100%;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 0 10px;
     box-shadow: 0 4px 12px 6px rgba(0, 0, 0, .06);
     position: fixed;
     bottom: 0;
 
     .menu-btn {
-        height: 45px;
+
+        height: 60px;
+        -webkit-box-pack: justify;
         justify-content: space-between;
         text-align: center;
+        padding: 8px 0;
+        box-sizing: border-box;
 
-        span.icon-Situation::before , span.icon-Request::before {
+        span.icon-Situation::before,
+        span.icon-Request::before {
             font-size: 26px;
+        }
+        &:active {
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
         }
     }
 
     .menu-btn.active {
         color: #007AFF;
-        }
+    }
 
     p {
         font-size: 10px;

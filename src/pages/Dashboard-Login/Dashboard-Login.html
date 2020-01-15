@@ -11,14 +11,14 @@
 
 <body>
 	<!-- PER PASSARE A MOBILE AGGIUNGERE A page-container LA CLASS: is-mobile -->
-	<div class="page-container dashboard-login homepage flex-column">
+	<div class="page-container dashboard-login homepage flex-column is-mobile">
 		<div class="public-head-container">
 			<div class="logo-content desktop-only">
 				<img src="../../static/assets/pitagora-spa-finanziamenti-cessione-quinto-dello-stipendio@2x.png">
 			</div>
 			<div class="legal-info-content mobile-only">
 				<p>Note Legali</p>
-				<img src="../../static/assets/placeholders/note-icon.png">
+				<div><img src="../../static/assets/ico_note_legali.svg"></div>
 			</div>
 		</div>
 
@@ -57,9 +57,9 @@
 			</div>
 			<!-- slider buttons-- aggiungere la classe -active- per il bottone corrente -->
 			<div class="buttons-container no-focus">
-				<div id="btn-1" class="btn-slider"></div>
-				<div id="btn-2" class="btn-slider active"></div>
-				<div id="btn-3" class="btn-slider"></div>
+				<div id="btn-1" class="btn-slider button no-focus"></div>
+				<div id="btn-2" class="btn-slider button no-focus active"></div>
+				<div id="btn-3" class="btn-slider button no-focus"></div>
 			</div>
 			<div class="side-element-container desktop-only">
 				<div class="side-element-content">
@@ -75,9 +75,9 @@
 			<!--login mobile component-->
 			<div class="login-container mobile-only">
 				<div class="digit-container flex-column">
-					<button class="button" id="touchId"></button>
+					<button class="button no-focus" id="touchId"></button>
 					<p>Login con <strong>Touch ID</strong></p>
-					<button id="access" class="button access">ACCESSO CLASSICO</button>
+					<button id="access" class="button access no-focus">ACCESSO CLASSICO</button>
 				</div>
 				<div class="registration-container">
 					<p>
@@ -125,11 +125,11 @@
 												<input class="input-field" type="password" id="password" name="password"
 												placeholder="Password" />
 										<!-- aggiungere la classe --reveal-- se bottone premuto -->
-												<div class="password-eye button reveal">
+												<button class="password-eye button no-focus reveal">
 													<!-- cambiare l'asset con quello più scuro, ho applicato l'opacity se non selezionato -->
 													<img class="content-hidden" src="../../static/assets/eye.svg">
 													<img class="content-revealed" src="../../static/assets/barred-eye.svg">
-												</div>
+												</button>
 											</label>
 											<span class="error-msg-container row-start">
 												<img src="../../static/assets/alert.svg">

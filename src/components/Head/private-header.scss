@@ -127,16 +127,16 @@
 
             .icons-container {
                 position: absolute;
-                right: 5px;
+                right: 0px;
+    
+                .icon-Notification, .icon-Profile {
+                    padding: 10px;
+                    display: flex;
+                    justify-content: center;
 
-                img#bell {
-                    height: auto;
-                    width: 25px;
-                }
-
-                img#user {
-                    height: auto;
-                    width: 35px;
+                    &:active {
+                        -webkit-tap-highlight-color: rgba(0,0,0,0);
+                    }
                 }
             }
         }

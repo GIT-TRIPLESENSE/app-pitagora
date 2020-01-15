@@ -76,6 +76,10 @@ html {
 	&:disabled {
 		background: #8BA7C6;
 	}
+
+	&:active {
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+	}
 }
 
 

@@ -257,6 +257,7 @@
     &-mobile {
         width: 95%;
         margin: 0 auto;
+
         .data-container {
             align-items: flex-start;
             padding-right: 20px;
@@ -291,6 +292,7 @@
             font-size: 12px;
             line-height: 16px;
             padding: 15px 5px;
+
             @media only screen and (max-width: 321px) {
                 padding: 20px 18px;
             }
@@ -300,6 +302,10 @@
                 background-color: $form-border-color;
                 color: $background-mobile-color;
 
+            }
+
+            &:active {
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
             }
         }
     }
@@ -355,6 +361,14 @@
 }
 
 .update-container {
+
+    .icon-warning {
+        padding: 5px;
+        margin-right: 5px;
+        display: flex;
+        justify-content: center;
+    }
+
     img {
         height: auto;
         width: 25px;
@@ -366,6 +380,10 @@
         color: $accent-color;
         font-size: 12px;
         line-height: 16px;
+    }
+
+    &:active {
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
 }
 

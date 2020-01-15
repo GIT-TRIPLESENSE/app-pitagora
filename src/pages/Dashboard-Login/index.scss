@@ -1,6 +1,5 @@
 body,
 html {
-
 	height: 100%;
 }
 	.page-container {
@@ -16,7 +15,7 @@ html {
 				margin: 0 auto;
 
 				@media only screen and (max-width: 912px) {
-					padding-top: 30px;
+					padding-top: 35px;
 				}
 
 			}
@@ -31,6 +30,7 @@ html {
 
 			&.is-mobile.homepage {
 				.main-container {
+					display: block;
 					flex-direction: column;
 					align-items: center;
 					justify-content: space-evenly;
@@ -42,6 +42,7 @@ html {
 			&.is-mobile {
 				background-color: #FFF;
 				color: $accent-color;
+				height: auto;
 				.mobile-only {
 					display: flex !important;
 				}
@@ -69,6 +70,7 @@ html {
 						-webkit-box-flex: 1;
 						flex: 1;
 						display: flex;
+						justify-content: center;
 				
 						.btn-slider {
 							// PLACEHOLDER PER IMMAGINE

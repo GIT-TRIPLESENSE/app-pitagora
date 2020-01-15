@@ -139,6 +139,8 @@
     color: $accent-color;
     opacity: 0.9;
     padding-top: 10px;
+    position: relative;
+    bottom: 0;
 
     a:link {
       color: $accent-color;
@@ -188,10 +190,10 @@
       overflow-x: hidden;
     }
 
-    .login-form-content-wrapper {
-      height: 100%;
-      // width: 100vh;
-    }
+    // .login-form-content-wrapper {
+    //   height: 100%;
+    //   // width: 100vh;
+    // }
 
     .request-container {
       display: flex;

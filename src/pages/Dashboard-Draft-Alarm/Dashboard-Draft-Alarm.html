@@ -22,11 +22,11 @@
             <div class="icons-container row">
                 <!-- da definire dimensione testo e icona-->
                 <div>
-                        <span id="bell" class="icon-Notification icon"></span>
+                        <div id="bell" class="icon-Notification icon"></div>
                     <!-- <img class="icon" id="bell" src="../../static/assets/Notification.svg"> -->
                 </div>
                 <div>
-                        <span id="user" class="icon-Profile icon"></span>
+                        <div id="user" class="icon-Profile icon"></div>
                     <!-- <img class="icon" id="user" src="../../static/assets/Profile.svg"> -->
                 </div>
             </div>
@@ -253,9 +253,9 @@
                     <div class="details-container flex-column mobile-only">
                         <div class="tab-menu row card">
                             <!-- inserire classe --active-- per il tasto attivo -->
-                            <div class="data-btn active">PRATICA</div>
-                            <div class="data-btn">ANTICIPI</div>
-                            <div class="data-btn">RIMBORSI</div>
+                            <button class="data-btn button no-focus active">PRATICA</button>
+                            <button class="data-btn button no-focus">ANTICIPI</button>
+                            <button class="data-btn button no-focus">RIMBORSI</button>
                         </div>
 
                         <!-- inserire classe --alert-- per alert attivo -->
@@ -315,7 +315,7 @@
                             </div>
                             <div class="info-pratica row-start">
                                 <div class="update-container row">
-                                    <span class="icon-warning icon"></span>
+                                    <div class="icon-warning icon"></div>
                                     <p id="update-date">Dati aggiornati al
                                         27/06/2019</p>
                                 </div>
@@ -429,29 +429,29 @@
 
 
         <!-- componente footer menu -->
-        <div class="footer-menu-container row mobile-only">
+        <b class="footer-menu-container row mobile-only">
             <!-- inserire classe --active-- per button attivo -->
-            <div id="situation" class="menu-btn button flex-column active">
+            <button id="situation" class="menu-btn button flex-column no-focus active">
                 <!-- <img class="menu-icon" src="../../static/assets/Situation.svg"> -->
                 <span class="icon-Situation icon"></span>
                 <p>La mia situazione</p>
-            </div>
+            </button>
 
-            <div id="requests" class="menu-btn button flex-column">
+            <button id="requests" class="menu-btn button flex-column no-focus">
                 <!-- <img class="menu-icon" src="../../static/assets/Request.svg"> -->
                 <span class="icon-Request icon"></span>
                 <p>Richieste</p>
-            </div>
-            <div id="archive" class="menu-btn button flex-column">
+            </button>
+            <button id="archive" class="menu-btn button flex-column no-focus">
                 <!-- <img class="menu-icon" src="../../static/assets/Archive.svg"> -->
                 <span class="icon-box-icon icon"></span>
                 <p>Archivio</p>
-            </div>
-            <div id="contactUs" class="menu-btn button flex-column">
+            </button>
+            <button id="contactUs" class="menu-btn button flex-column no-focus">
                 <!-- <img class="menu-icon" src="../../static/assets/mail-ico.svg"> -->
                 <span class="icon-mail-icon icon"></span>
                 <p>Parla con noi</p>
-            </div>
+            </button>
         </div>
     </div>
     </div>
