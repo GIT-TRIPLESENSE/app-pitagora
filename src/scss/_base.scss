@@ -158,6 +158,12 @@ html {
 }
 
 
+a[href^="tel"] {
+	color: inherit; /* Inherit text color of parent element. */
+	text-decoration: none; /* Remove underline. */
+	/* Additional css `propery: value;` pairs here */
+  }
+
 
 @import '../pages/Dashboard-Login/index.scss';
 @import '../pages/Dashboard-Draft-Alarm/index.scss';
