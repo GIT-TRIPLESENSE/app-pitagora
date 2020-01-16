@@ -10,6 +10,8 @@
     display: none;
     z-index: 1;
 
+
+
     &__title {
         p.bold {
             color: #072952;
@@ -36,27 +38,17 @@
     }
 
     &__footer {
-        display: none;
+        display: flex;
+        justify-content: center;
         padding-top: 10px;
     }
 
     // display classes
     //modal
     &.is-visible {
-
         display: block;
-
-        // display: flex;
-        // flex-direction: column;
-    }
-
-    //modal footer
-    &.is-user {
-
-        .floating-modal__footer {
-            
-            display: flex;
-            justify-content: center;
+        @media screen and (max-width: 940px) {
+            display: none;
         }
     }
 
