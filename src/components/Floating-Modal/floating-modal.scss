@@ -1,0 +1,84 @@
+.floating-modal-wrapper {
+    position: relative;
+}
+
+.floating-modal {
+    position: absolute;
+    width: 290px;
+    box-sizing: border-box;
+    padding: 16px;
+    display: none;
+    z-index: 1;
+
+    &__title {
+        p.bold {
+            color: #072952;
+            font-size: 18px;	
+            line-height: 24px;
+            opacity: 1;
+        }
+    }
+
+    &__body {
+        // card text override
+        .card-title-container {
+            p {
+                color: #000000;	
+                font-size: 14px;	
+                font-weight: bold;	
+                line-height: 19px;
+            }
+        }
+
+        .single-card-container:last-child .divider {
+            display: none;
+        }
+    }
+
+    &__footer {
+        display: none;
+        padding-top: 10px;
+    }
+
+    // display classes
+    //modal
+    &.is-visible {
+
+        display: block;
+
+        // display: flex;
+        // flex-direction: column;
+    }
+
+    //modal footer
+    &.is-user {
+
+        .floating-modal__footer {
+            
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    //positioning classes
+    &.bottom-right {
+        top: calc(100% + 20px);
+        left: 0;
+    }
+    &.bottom-right-negative {
+        top: calc(100% + 20px);
+        right: -100px;
+    }
+    &.bottom-left {
+        top: calc(100% + 20px);
+        right: 20px;
+    }
+    &.top-right {
+        bottom: calc(100% + 20px);
+        left: 0;
+    }
+    &.top-left {
+        bottom: calc(100% + 20px);
+        right: 20px;
+    }
+}
