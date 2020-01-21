@@ -77,6 +77,26 @@
     padding-top: 8px;
     box-sizing: border-box;
 
+    #right-arrow {
+        opacity: 0.2;
+        
+        &.has-next {
+            opacity: 1;
+
+        }
+    }
+    #left-arrow {
+        opacity: 0.2;
+        img {
+            transform: rotate(180deg);
+
+        }
+        &.has-prev{
+            opacity: 1;
+
+        }
+    }
+
 }
 
 .card {
@@ -87,6 +107,25 @@
     padding: 20px 30px;
     margin-right: 10px;
     box-sizing: border-box;
+
+    &.is-empty {
+        .info-card-body .row-card {
+        justify-content: center;
+
+            p {
+                color: $accent-color;
+            }
+
+            span {
+                font-size: 14px;	
+                line-height: 20px;	
+                text-align: center;
+                color: $accent-color;
+                padding: 0 10px;
+                width: 60%;
+            }
+        }
+    }
 }
 
 .info-card-body {
@@ -126,8 +165,10 @@
     p {
         padding: 0 5px;
     }
+
 }
 
 .button-arrow {
     padding: 5px;
 }
+
