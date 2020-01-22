@@ -172,6 +172,33 @@ a[href^="tel"] {
 	align-items: center;
 }
 
+.rotated {
+	img {
+		transform: rotate(180deg);
+	}
+}
+
+#right-arrow {
+    opacity: 0.2;
+    
+    &.has-next {
+        opacity: 1;
+
+    }
+}
+
+#left-arrow {
+    opacity: 0.2;
+	&.rotated {
+		img {
+			transform: rotate(180deg);
+		}
+	}
+    &.has-prev{
+        opacity: 1;
+
+    }
+}
 
 @import '../pages/Dashboard-Login/index.scss';
 @import '../pages/Dashboard-Draft-Alarm/index.scss';

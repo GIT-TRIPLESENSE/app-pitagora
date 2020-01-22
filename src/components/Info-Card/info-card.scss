@@ -77,26 +77,6 @@
     padding-top: 8px;
     box-sizing: border-box;
 
-    #right-arrow {
-        opacity: 0.2;
-        
-        &.has-next {
-            opacity: 1;
-
-        }
-    }
-    #left-arrow {
-        opacity: 0.2;
-        img {
-            transform: rotate(180deg);
-
-        }
-        &.has-prev{
-            opacity: 1;
-
-        }
-    }
-
 }
 
 .card {
